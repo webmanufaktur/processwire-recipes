@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ title }}</title>
+        <link rel="canonical" href="{{ config.url }}{{ page.url }}" />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="preload" href="/assets/css/tailwind.dist.css" as="style" />
+        <link rel="stylesheet" href="/assets/css/tailwind.dist.css" />
+        <script>
+            if (localStorage.getItem("color-theme") === "dark") {
+                document.documentElement.classList.add("dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+            }
+        </script>
+    </head>
+    <body>
+        {{ content | safe }}
+    </body>
+</html>
