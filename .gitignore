@@ -1,0 +1,7 @@
+.cache
+.env
+node_modules
+_site
+src/assets/css/tailwind.dist.css
+src/assets/js/app.dist.js
+src/assets/js/alpine.dist.js
