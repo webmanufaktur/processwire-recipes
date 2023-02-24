@@ -34,10 +34,6 @@ markdown.use(markdownItImageFigures, {
     classes: "lazy",
     figcaption: true,
 });
-markdown.use(crosslinker, {
-    dictionary,
-    wholeWords: true,
-});
 markdown.use(markdownItAnchor);
 markdown.use(mila, [
     {
