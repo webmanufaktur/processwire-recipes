@@ -1,27 +1,17 @@
-title: Create an index/linklist of all used image tags
-
-----
-
+---
+title: "Create an index/linklist of all used image tags"
 version: 1.0.0
-
-----
-
 authors: soma
-
-----
-
 tags: images, tags, index
+---
 
-----
+## Problem You need to collect all tags from image fields and create a link list to then filter pages with images that have the selected tag.
 
-problem:
-You need to collect all tags from image fields and create a link list to then filter pages with images that have the selected tag.
+## Solution
 
-----
-
-solution:
 (See inline comments:)
-```PHP
+
+```php
 /**
  * collect all tags
  * ======================================
@@ -107,7 +97,8 @@ if($input->urlSegment1 || $input->get->tag){
 }
 ```
 
-----
+---
 
 resources:
-* [Soma's original Gist on GitHub](https://gist.github.com/somatonic/5808897)
+
+-   [Soma's original Gist on GitHub](https://gist.github.com/somatonic/5808897)

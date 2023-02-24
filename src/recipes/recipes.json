@@ -1,5 +1,5 @@
 {
-    "permalink": "{{ page.fileSlug }}/index.html",
+    "permalink": "/recipes/{{ page.fileSlug }}/index.html",
     "layout": "recipe.html",
     "tags": "recipes"
 }

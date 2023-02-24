@@ -1,20 +1,12 @@
-title: Create breadcrumb of page titles for html title tag
-
-----
-
+---
+title: "Create breadcrumb of page titles for html title tag"
 version: 1.0.0
-
-----
-
 authors: Tom Arnold
-
-----
-
 tags: title, page, title-tag, html
+---
 
-----
+## Problem
 
-problem:
 You want to have a html page title that shows the rootline to the current page, for example "Hot News « Articles « Cool Website", if your page tree looks like this:
 
 |- Home (Cool Website)
@@ -23,12 +15,13 @@ You want to have a html page title that shows the rootline to the current page, 
 
 |--- Hot News
 
-----
+---
 
-solution:
-Put this in your _func.php or where ever your setup has a place for shared functions
+## Solution
 
-```PHP
+Put this in your \_func.php or where ever your setup has a place for shared functions
+
+```php
 function renderPageTitle($options=array()){
 	$defaults = array(
 		'glue'    => ' « ', // ' » '
@@ -52,7 +45,7 @@ function renderPageTitle($options=array()){
 
 and then use it in your template like this:
 
-```HTML
+```html
 <?php $pageTitle = renderPageTitle(); ?>
 ...
 <title><?php echo $pageTitle; ?></title>
@@ -60,20 +53,16 @@ and then use it in your template like this:
 
 This will list the current page first, and every parent page up to the root/home page after, separated with a "«". If you want to reverse the the order, there is an option array parameter, where the order and the "glue", the char that's shown as a separator between the page titles, can be specified.
 
-```HTML
+```html
 <?php
 $options = array(
-	'reverse' => false,
-	'glue' => ' | '
-);
-$pageTitle = renderPageTitle($options); ?>
-...
+	'reverse' =>
+false, 'glue' => ' | ' ); $pageTitle = renderPageTitle($options); ?> ...
 <title><?php echo $pageTitle; ?></title>
 ```
 
 this will print out "Cool Website | Articles | Hot News".
 
-
-----
+---
 
 resources:

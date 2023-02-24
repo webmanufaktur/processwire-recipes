@@ -1,27 +1,21 @@
-title: Set backend field column width via API
-
-----
-
+---
+title: "Set backend field column width via API"
 version: 1.0.1
-
-----
-
 authors: dragan
-
-----
-
 tags: fields, backend, width
+---
 
-----
+## Problem
 
-problem:
 You want to set backend field widths, bypassing the admin interface
 
-----
+---
 
-solution:
+## Solution
+
 Set inputfield column widths via API:
-```PHP
+
+```php
 // If not inside template
 $fields = wire("fields");
 
@@ -33,7 +27,8 @@ foreach ($prodFields as $k=>$v) {
 }
 ```
 
-----
+---
 
 resources:
-* [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/setColumnWidth.php)
+
+-   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/setColumnWidth.php)

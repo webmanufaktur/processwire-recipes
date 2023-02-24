@@ -1,27 +1,19 @@
-title: Add fields to template programmatically
-
-----
-
+---
+title: "Add fields to template programmatically"
 version: 1.0.1
-
-----
-
 authors: dragan
-
-----
-
 tags: pages, fields
+---
 
-----
+## Problem
 
-problem:
 You want to add fields to a certain template, bypassing the admin interface.
 
-----
+## Solution
 
-solution:
 Add several fields to template via API
-```PHP
+
+```php
 // Bootstrap ProcessWire
 include('./index.php');
 $fields = wire("fields");
@@ -35,7 +27,8 @@ foreach ($prodFields as $k=>$v) {
 }
 ```
 
-----
+---
 
 resources:
-* [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/addFieldsToTemplate.php)
+
+-   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/addFieldsToTemplate.php)
