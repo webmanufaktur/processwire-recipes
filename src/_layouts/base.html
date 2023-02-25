@@ -2,8 +2,30 @@
 layout: _main.html
 ---
 
-<header>HEADER</header>
-<nav>NAV</nav>
-{{ content | safe }}
-<main></main>
-<footer>FOOTER</footer>
+<header class="py-6">
+    <div class="mx-auto max-w-2xl text-center">
+        <a href="/" class="font-bold">{{ config.title }}</a>
+    </div>
+</header>
+<nav class="bg-stone-200 py-8">
+    <ul class="flex justify-center items-center gap-8">
+        {% for link in navigation.main %}
+        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>
+<main class="py-12">{{ content | safe }}</main>
+<footer class="bg-stone-200 py-6">
+    <ul class="flex justify-center items-center gap-8">
+        {% for link in navigation.footer %}
+        <li>
+            <a
+                href="{{ link.url }}"
+                class="text-sm tracking-wider uppercase"
+                rel="nofollow"
+                >{{ link.label }}</a
+            >
+        </li>
+        {% endfor %}
+    </ul>
+</footer>
