@@ -19,3 +19,17 @@ The new repository (based on the legacy version) can be found here.
 Some day in the future additional recipes will be added from my personal collection.
 
 -   https://github.com/webmanufaktur/processwire-snippets
+
+### Site details
+
+-   This site went online on **2023-02-25**
+-   This site uses [11ty](https://11ty.dev/) to render `.md` files into `.html`
+-   This site is hosted on [Cloudflare Pages](https://pages.cloudflare.com/)
+
+### Issues? Problems? Questions?
+
+-   You can post issues, problems and questions on the [public repository](https://github.com/webmanufaktur/processwire-recipes/issues)
+
+### You want to add a recipe?
+
+-   Fork the [repository](https://github.com/webmanufaktur/processwire-recipes/), add your recipes or changes, send a pull request
