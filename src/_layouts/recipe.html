@@ -6,6 +6,22 @@ layout: base.html
     <div>
         <h1>{{ title }}</h1>
     </div>
-    <div>META</div>
+    <div class="flex gap-4">
+        <div>
+            <strong>Version:</strong>
+            <br />
+            {{ version }}
+        </div>
+        <div>
+            <strong>Authors:</strong>
+            <br />
+            {{ authors }}
+        </div>
+        <div>
+            <strong>Tags:</strong>
+            <br />
+            {{ tags }}
+        </div>
+    </div>
     <div>{{ content | safe }}</div>
 </article>
