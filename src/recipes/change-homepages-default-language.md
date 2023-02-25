@@ -7,7 +7,7 @@ tags: multilanguage, homepage, modules
 
 ## Problem
 
-You have a multi-language site, and started with for example English as primary, and French as secondary language (so the English homepage is example.org/, the French one example.org/fr). Later in the project you want to set French as primary.
+You have a multi-language site, and started with for example English as primary, and French as secondary language (so the English homepage is `example.org/`, the French one `example.org/fr`). Later in the project you want to set French as primary.
 
 ## Solution
 
