@@ -38,7 +38,7 @@ layout: "base.html"
                     {% for tag in recipe.data.tags %}
                      {% if tag != "recipes" %}
                     <a
-                        href="/topic/{{ tag | slugify }}"
+                        href="/topic/{{ tag | slugify }}/"
                         class="no-underline border-2 text-sm border-zinc-200 bg-zinc-100 rounded p-1"
                         >#{{ tag }}</a
                     >

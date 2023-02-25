@@ -24,7 +24,7 @@ layout: base.html
             <div>
                 {% for tag in tags %} {% if tag != "recipes" %}
                 <a
-                    href="/topic/{{ tag | slugify }}"
+                    href="/topic/{{ tag | slugify }}/"
                     class="bg-zinc-100 border-2 border-zinc-200 p-1 rounded"
                     >{{ tag }}</a
                 >
