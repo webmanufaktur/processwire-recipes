@@ -23,6 +23,6 @@ include_once(dirname(__FILE__) . "/mylibs/myfunctions.php");
 
 This way you can use all what the features/methods this utility files everywhere.
 
-resources:
+### Resources
 
 -   [Forum thread](https://processwire.com/talk/topic/7573-best-way-to-implement-a-global-utility-function/#entry73157)

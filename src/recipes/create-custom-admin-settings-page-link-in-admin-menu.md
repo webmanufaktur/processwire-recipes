@@ -28,6 +28,6 @@ Now go to the Settings page in the navbar. Nice, easy and "official" feeling.
 
 ---
 
-resources:
+### Resources
 
 -   [How to create a custom admin settings page](https://processwire.com/talk/topic/6388-how-to-create-a-custom-admin-settings-page/?p=99829)

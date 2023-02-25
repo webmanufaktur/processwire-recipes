@@ -179,7 +179,7 @@ At this point you have to manually edit the `$cssupdate` string everytime you're
 
 ---
 
-resources:
+### Resources
 
 -   [Original post by adactio](https://adactio.com/journal/8504)
 -   [Forum thread](https://processwire.com/talk/topic/4710-frontend-performance-tips/?p=90612)

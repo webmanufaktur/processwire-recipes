@@ -46,7 +46,7 @@ Basicly what this does is set a session variable with a name (getTokenName) and 
 
 ---
 
-resources:
+### Resources
 
 -   [Harmster's forum post](https://processwire.com/talk/topic/3779-use-csrf-in-your-own-forms/)
 -   [Wikipedia on CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery)

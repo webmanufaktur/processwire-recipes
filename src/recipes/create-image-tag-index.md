@@ -99,6 +99,6 @@ if($input->urlSegment1 || $input->get->tag){
 
 ---
 
-resources:
+### Resources
 
 -   [Soma's original Gist on GitHub](https://gist.github.com/somatonic/5808897)

@@ -28,4 +28,4 @@ if($pages->count("parent=$page")) $session->redirect($page->child->url, false);
 
 ---
 
-resources:
+### Resources

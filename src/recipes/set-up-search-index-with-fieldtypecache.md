@@ -37,6 +37,6 @@ Please note that if your PHP version is lower than 5.4, FieldtypeCache escapes m
 
 ---
 
-resources:
+### Resources
 
 -   [ProcessWire Weekly 129](https://weekly.pw/issue/129)

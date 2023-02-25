@@ -44,6 +44,6 @@ echo "</ul>";
 
 ---
 
-resources:
+### Resources
 
 -   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/breadcrumbs.inc)

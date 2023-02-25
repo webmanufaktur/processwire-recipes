@@ -19,4 +19,4 @@ Simply check the page-lister permission to the role in question.
 
 ---
 
-resources:
+### Resources

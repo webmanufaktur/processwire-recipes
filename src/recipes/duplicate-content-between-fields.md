@@ -32,4 +32,4 @@ foreach($pages->find("template=$template") as $p) {
 
 ---
 
-resources:
+### Resources

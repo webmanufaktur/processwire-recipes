@@ -52,6 +52,6 @@ if($_SERVER['HTTP_HOST'] == 'm.domain.ext') {
 
 ---
 
-resources:
+### Resources
 
 -   [Forum post](https://processwire.com/talk/topic/8789-should-all-template-files-put-under-sitetemplates-folder/#entry84861)

@@ -65,4 +65,4 @@ this will print out "Cool Website | Articles | Hot News".
 
 ---
 
-resources:
+### Resources

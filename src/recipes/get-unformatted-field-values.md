@@ -21,6 +21,6 @@ You can access the naked field value with the getUnformatted method like so:
 
 ---
 
-resources:
+### Resources
 
 -   [Forum thread](https://processwire.com/talk/topic/1978-how-to-format-dates-in-templates/#entry18517)

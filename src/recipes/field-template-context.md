@@ -29,7 +29,7 @@ $fields->saveFieldgroupContext($f, $t->fieldgroup);
 
 ---
 
-resources:
+### Resources
 
 -   Forum thread: [Change field description in context via API](https://processwire.com/talk/topic/6656-change-field-description-in-context-via-api/?p=65139)
 -   Blog post: [Field/template context now available for any field property](http://processwire.com/blog/posts/processwire-2.5.7-core-updates/#field-template-context-now-available-for-any-field-property)

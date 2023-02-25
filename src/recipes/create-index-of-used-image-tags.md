@@ -98,7 +98,7 @@ if($input->urlSegment1 || $input->get->tag){
 
 ---
 
-resources:
+### Resources
 
 -   [ProcessWire Weekly 124](https://weekly.pw/issue/124/)
 -   [Soma'original recipe](https://gist.github.com/somatonic/5808897)

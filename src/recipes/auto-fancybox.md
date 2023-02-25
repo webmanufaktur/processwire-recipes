@@ -29,6 +29,6 @@ $(".to-fancy").fancybox();
 
 ---
 
-resources:
+### Resources
 
 -   [Forum thread](https://processwire.com/talk/topic/5578-how-to-use-fancybox/?p=73141)

@@ -64,6 +64,6 @@ Here is what you can do to redirect the home page '/' to the French home page:
 
 ---
 
-resources:
+### Resources
 
 -   [bcartiers's forum post](https://processwire.com/talk/topic/9322-change-default-language-for-homepage/#entry89925)

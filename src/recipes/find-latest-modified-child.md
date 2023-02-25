@@ -19,6 +19,6 @@ $lastModifiedChild = $page->find("id>0,sort=-modified")->first;
 
 ---
 
-resources:
+### Resources
 
 -   [Tweet](https://twitter.com/isellsoap/status/361471127379378177)

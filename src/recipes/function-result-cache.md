@@ -38,4 +38,4 @@ function expensiveStuff($name, $someOtherParam, $forceNew = false)
 
 ---
 
-resources:
+### Resources

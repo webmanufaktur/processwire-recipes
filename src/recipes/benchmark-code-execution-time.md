@@ -19,7 +19,7 @@ echo Debug::timer($t);
 
 ---
 
-resources:
+### Resources
 
 -   [Tweet](https://twitter.com/processwire/status/452439920653893633)
 -   [Usage examples in forum thread](https://processwire.com/talk/topic/6328-optimizing-code-queries/)

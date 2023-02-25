@@ -56,7 +56,7 @@ Also add to your CSS:
 
 ---
 
-resources:
+### Resources
 
 -   [Blog post on this topic](https://bigger-on-the-inside.net/articles/better-accessibility-with-processwire-read-more-links/)
 -   [W3C's Accessibility Guidelines on links and content](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)

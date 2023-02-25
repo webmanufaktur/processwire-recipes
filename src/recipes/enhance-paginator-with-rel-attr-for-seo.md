@@ -49,6 +49,6 @@ foreach($children as $child): ?>
 
 ---
 
-resources:
+### Resources
 
 -   [Forum thread](https://processwire.com/talk/topic/5145-paginator-and-seo/)

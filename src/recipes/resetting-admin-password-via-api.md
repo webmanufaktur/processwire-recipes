@@ -37,7 +37,7 @@ $admin->save('pass');
 
 ---
 
-resources:
+### Resources
 
 -   [Forum thread](https://processwire.com/talk/topic/7167-server-error-with-latest-dev-build/#entry69041)
 -   [Blog post](https://processwire.com/blog/posts/processwire-2.6.9-core-updates-and-new-procache-version/)

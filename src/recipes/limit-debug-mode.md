@@ -45,4 +45,4 @@ As long as your production server has not set an environment variable of this na
 
 ---
 
-resources:
+### Resources

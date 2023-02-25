@@ -71,7 +71,7 @@ class HookAfterPagesSave extends WireData implements Module {
 
 ---
 
-resources:
+### Resources
 
 -   [Currently latest forum topic](https://processwire.com/talk/topic/8863-new-to-hooks-trying-to-wrap-my-head-around-the-syntax/)
 -   [ProcessWire Docs on Hooks](http://processwire.com/api/hooks/)

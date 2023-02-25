@@ -36,7 +36,7 @@ $field->save();
 
 ---
 
-resources:
+### Resources
 
 -   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/setFieldLabels.php)
 -   [ProcessWire API documentation and getting and setting](http://processwire.com/api/multi-language-support/multi-language-fields/#getting-and-setting)

@@ -46,6 +46,6 @@ SENT (1 of 1), SUBJECT (Hello world), TO (test@processwire.com), FROM (ryan@test
 
 ---
 
-resources:
+### Resources
 
 -   [Ryan's post on processwire.com](https://processwire.com/blog/posts/processwire-3.0.38-core-updates/#recipe-logging-all-outgoing-emails)

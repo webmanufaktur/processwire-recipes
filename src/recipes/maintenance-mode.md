@@ -39,4 +39,4 @@ $config->maintenance = true;
 
 ---
 
-resources:
+### Resources
