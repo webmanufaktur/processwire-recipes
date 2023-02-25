@@ -2,7 +2,9 @@
 title: "Create page via API"
 version: 1.0.1
 authors: dragan
-tags: page, creation
+tags:
+    - page
+    - creation
 ---
 
 ## Problem

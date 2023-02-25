@@ -2,7 +2,10 @@
 title: "Inline critical above the fold css"
 version: 1.1.1
 authors: felixwahner, neuwaerts
-tags: css, performance, fold
+tags:
+    - css
+    - performance
+    - fold
 ---
 
 ## Problem

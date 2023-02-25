@@ -2,7 +2,11 @@
 title: "Extending page save process"
 version: 1.0.1
 authors: lostkobrakai
-tags: pages, modules, helpers, autoload
+tags:
+    - pages
+    - modules
+    - helpers
+    - autoload
 ---
 
 ## Problem

@@ -2,7 +2,9 @@
 title: "Get unformatted field values"
 version: 1.0.1
 authors: SiNNuT, marcus
-tags: fields, unformatted
+tags:
+    - fields
+    - unformatted
 ---
 
 ## Problem

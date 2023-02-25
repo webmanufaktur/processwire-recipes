@@ -2,7 +2,10 @@
 title: "Converting thumbnail images for PW3 admin"
 version: 1.0.1
 authors: ryan
-tags: processwire3, admin, thumbnails
+tags:
+    - processwire3
+    - admin
+    - thumbnails
 ---
 
 ## Problem Lets say that you've recently upgraded to ProcessWire 3.x and noticed that all of your thumbnail images are low-quality in the admin.

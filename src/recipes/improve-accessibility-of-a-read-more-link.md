@@ -2,7 +2,10 @@
 title: "Improve accessibility of a read more link
 version: 1.0.0"
 authors: marcus
-tags: a11y, accessibility, templates
+tags:
+    - a11y
+    - accessibility
+    - templates
 ---
 
 ## Problem

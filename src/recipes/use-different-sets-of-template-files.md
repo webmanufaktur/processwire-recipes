@@ -2,7 +2,10 @@
 title: "Use different sets of template files, e.g. based on hostname"
 version: 1.0.0
 authors: Raymond Geerts
-tags: URL, templates, switches
+tags:
+    - URL
+    - templates
+    - switches
 ---
 
 ## Problem

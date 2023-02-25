@@ -2,7 +2,10 @@
 title: "Change homepage's default language"
 version: 1.0.1
 authors: bcartier, ESRCH
-tags: multilanguage, homepage, modules
+tags:
+    - multilanguage
+    - homepage
+    - modules
 ---
 
 ## Problem

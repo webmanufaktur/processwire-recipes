@@ -2,7 +2,9 @@
 title: "Add fields to template programmatically"
 version: 1.0.1
 authors: dragan
-tags: pages, fields
+tags:
+    - pages
+    - fields
 ---
 
 ## Problem

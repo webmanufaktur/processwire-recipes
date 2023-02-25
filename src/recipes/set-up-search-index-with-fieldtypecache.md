@@ -2,7 +2,10 @@
 title: "Set up a really simple search index using FieldtypeCache"
 version: 1.0.1
 authors: teppo
-tags: cache, search, index
+tags:
+    - cache
+    - search
+    - index
 ---
 
 ## Problem

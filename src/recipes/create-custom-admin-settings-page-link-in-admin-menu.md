@@ -2,7 +2,10 @@
 title: "Create custom admin settings page link in admin menu"
 version: 1.0.0
 authors: jlahijani
-tags: page, settings, admin
+tags:
+    - page
+    - settings
+    - admin
 ---
 
 ## Problem You want to create a link in the admin menu bar that allows you to easily access a global settings page for your site, without having to create a custom process module or going to the page using the pagetree.

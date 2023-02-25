@@ -2,7 +2,9 @@
 title: "Prefill PageTable fields with children on edit"
 version: 1.0.3
 authors: noelboss
-tags: pages, fields
+tags:
+    - pages
+    - fields
 ---
 
 ## Problem

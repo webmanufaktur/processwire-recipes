@@ -2,7 +2,10 @@
 title: "Maintenance Mode"
 version: 1.0.3
 authors: owzim
-tags: admin, maintenance, session
+tags:
+    - admin
+    - maintenance
+    - session
 ---
 
 ## Problem

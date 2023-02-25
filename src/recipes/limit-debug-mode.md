@@ -2,7 +2,9 @@
 title: "Limiting debug mode to development environment"
 version: 1.0.2
 authors: marcus
-tags: debug, config
+tags:
+    - debug
+    - config
 ---
 
 ## Problem

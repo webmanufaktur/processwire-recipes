@@ -2,7 +2,10 @@
 title: "Create an index/linklist of all used image tags"
 version: 1.0.0
 authors: soma
-tags: images, tags, index
+tags:
+    - images
+    - tags
+    - index
 ---
 
 ## Problem You need to collect all tags from image fields and create a link list to then filter pages with images that have the selected tag.

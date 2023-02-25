@@ -2,7 +2,10 @@
 title: "Enhance image links on your site with FancyBox"
 version: 1.0.1
 authors: Martijn Geerts
-tags: modal, javascript, fancybox
+tags:
+    - modal
+    - javascript
+    - fancybox
 ---
 
 ## Problem

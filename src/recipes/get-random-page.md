@@ -2,7 +2,10 @@
 title: "Get random page via API, e.g. from a pool of testimonials"
 version: 1.2.0
 authors: dragan, apeisa, marcus
-tags: pages, random, shuffle
+tags:
+    - pages
+    - random
+    - shuffle
 ---
 
 ## Problem

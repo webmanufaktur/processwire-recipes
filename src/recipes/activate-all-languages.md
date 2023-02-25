@@ -2,7 +2,9 @@
 title: "Activate all languages on pages created via API"
 version: 1.0.1
 authors: dragan
-tags: pages, multilanguage
+tags:
+    - pages
+    - multilanguage
 ---
 
 ## Problem

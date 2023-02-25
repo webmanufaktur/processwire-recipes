@@ -2,7 +2,10 @@
 title: "Set language-specific input field labels via API"
 version: 1.0.1
 authors: dragan
-tags: pages, multilanguage, labels
+tags:
+    - pages
+    - multilanguage
+    - labels
 ---
 
 ## Problem

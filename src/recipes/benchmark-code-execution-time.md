@@ -2,7 +2,10 @@
 title: "Benchmark code execution time"
 version: 1.0.0
 authors: ryan
-tags: debug, time, performance
+tags:
+    - debug
+    - time
+    - performance
 ---
 
 ## Problem
