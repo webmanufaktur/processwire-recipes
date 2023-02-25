@@ -275,7 +275,8 @@ module.exports = function (eleventyConfig) {
                     "pages",
                     "snippets",
                     "links",
-                    "tvshows",
+                    "pillows",
+                    "recipes",
                 ].indexOf(tag) === -1
         );
     });

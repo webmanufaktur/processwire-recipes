@@ -1,0 +1,19 @@
+<section class="py-8 md:py-12">
+    {# flex justify-center items-center gap-4 max-w-4xl mx-auto flex-wrap #} {#
+    grid grid-cols-4 gap-4 grid-flow-dense #}
+    <ul
+        class="max-w-7xl md:flex gap-4 md:flex-wrap md:justify-center grid grid-cols-2 mx-auto"
+    >
+        {% for tag in collections.all | getAllTags | filterTagList %}
+        <li>
+            <a
+                href="/topic/{{ tag | slugify }}/"
+                class="bg-slate-50 dark:bg-slate-700 dark:text-slate-100 text-slate-800 py-2 px-4 rounded text-xs tracking-widest font-semibold shadow-inner uppercase block"
+            >
+                <span class="text-red-600">#</span>
+                <span class="">{{ tag }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

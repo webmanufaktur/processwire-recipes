@@ -1,7 +1,16 @@
-<ol reversed>
-    {% for recipe in collections.recipes %}
+<ul class="space-y-6">
+    {% for recipe in collections.recipes | sortByTitle %}
     <li>
         <a href="{{ recipe.url }}">{{ recipe.data.title }}</a>
+        <div class="mt-2">
+            {% for tag in recipe.data.tags %} {% if tag != "recipes" %}
+            <a
+                href="/topic/{{ tag | slugify }}"
+                class="no-underline border-2 text-sm border-zinc-200 bg-zinc-100 rounded p-1"
+                >#{{ tag }}</a
+            >
+            {% endif %} {% endfor %}
+        </div>
     </li>
     {% endfor %}
-</ol>
+</ul>

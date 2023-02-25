@@ -1,0 +1,52 @@
+---
+pagination:
+    data: collections
+    addAllPagesToCollections: true
+    size: 1
+    alias: tag
+    filter:
+        - all
+        - post
+        - posts
+        - tagList
+        - links
+        - pillows
+        - recipes
+eleventyComputed:
+    title: More about {{ tag }}
+    titleRendered: More posts talking about <span class="block text-red-600">{{ tag }}</span>
+    seo:
+        title: More about {{ tag }}
+        desc: All posts, snippets and various other content talking about {{ tag }}.
+        robots: "noindex, nofollow"
+permalink: /topic/{{ tag | slugify }}/
+layout: "base.html"
+---
+
+<article class="prose max-w-2xl mx-auto">
+    <div>
+        <h1>{{ tag }}</h1>
+    </div>
+    <div>{{ content | safe }}</div>
+
+    <div>
+        <ul class="space-y-6">
+            {% for recipe in collections[ tag ] | sortByTitle %}
+            <li>
+                <a href="{{ recipe.url }}">{{ recipe.data.title }}</a>
+                <div class="mt-2">
+                    {% for tag in recipe.data.tags %}
+                     {% if tag != "recipes" %}
+                    <a
+                        href="/topic/{{ tag | slugify }}"
+                        class="no-underline border-2 text-sm border-zinc-200 bg-zinc-100 rounded p-1"
+                        >#{{ tag }}</a
+                    >
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</article>

@@ -10,7 +10,9 @@ layout: base.html
         <div>
             <strong>Version:</strong>
             <br />
-            {{ version }}
+            {% if version %} {{ version }} {% else %}
+            <em>NA</em>
+            {% endif %}
         </div>
         <div>
             <strong>Authors:</strong>
@@ -19,8 +21,15 @@ layout: base.html
         </div>
         <div>
             <strong>Tags:</strong>
-            <br />
-            {{ tags }}
+            <div>
+                {% for tag in tags %} {% if tag != "recipes" %}
+                <a
+                    href="/topic/{{ tag | slugify }}"
+                    class="bg-zinc-100 border-2 border-zinc-200 p-1 rounded"
+                    >{{ tag }}</a
+                >
+                {% endif %} {% endfor %}
+            </div>
         </div>
     </div>
     <div>{{ content | safe }}</div>
