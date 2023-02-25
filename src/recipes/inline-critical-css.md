@@ -18,7 +18,7 @@ _This solution depends on several tools that make the "build" process a lot easi
 ## Tools used:
 
 -   [NodeJS](https://nodejs.org/)
--   [Grunt](gruntjs.com)
+-   [Grunt](https://gruntjs.com/)
 -   [Grunt Critical-CSS](https://github.com/filamentgroup/grunt-criticalcss)
 -   [Grunt-Contrib-Copy](https://github.com/gruntjs/grunt-contrib-copy)
 
