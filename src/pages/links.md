@@ -13,5 +13,7 @@ desc: "Tell us more about your project and what it offers."
 started: "2022"
 author: "Joe Sample"
 website: "https://project.tld/"
+logo: "https://project.tld/logo.png"
+cover: "https://project.tld/cover.png"
 ---
 ```
