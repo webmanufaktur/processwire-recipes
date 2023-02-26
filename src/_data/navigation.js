@@ -1,10 +1,6 @@
 module.exports = {
     main: [
         {
-            label: "ProcessWire Recipes",
-            url: "/",
-        },
-        {
             label: "About",
             url: "/about/",
         },

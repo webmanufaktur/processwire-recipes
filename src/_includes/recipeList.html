@@ -1,8 +1,8 @@
-<ul class="space-y-6">
+<ul class="space-y-6 table mx-auto">
     {% for recipe in collections.recipes | sortByTitle %}
-    <li>
-        <a href="{{ recipe.url }}">{{ recipe.data.title }}</a>
-        <div class="mt-2">
+    <li class="p-4 md:p-6 border-2 border-gray-100 even:bg-gray-100 rounded">
+        <a href="{{ recipe.url }}" class="font-bold">{{ recipe.data.title }}</a>
+        <div class="mt-2 md:mt-4">
             {% for tag in recipe.data.tags %} {% if tag != "recipes" %}
             <a
                 href="/topic/{{ tag | slugify }}/"
