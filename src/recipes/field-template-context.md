@@ -13,8 +13,6 @@ tags:
 
 Fields can have template-contextual settings and as of ProcessWire [2.5.7](http://processwire.com/blog/posts/processwire-2.5.7-core-updates/) you can set _all_ field settings in a template context. Using the [API](https://processwire.com/api/) it works a bit differently than the usual `$f->set('setting', $value); $f->save();`.
 
----
-
 ## Solution
 
 ```php

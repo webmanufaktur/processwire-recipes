@@ -13,8 +13,6 @@ tags:
 
 A page has got a possibly deeply nested children structure and you want to get the latest modified child of that page.
 
----
-
 ## Solution
 
 ```php

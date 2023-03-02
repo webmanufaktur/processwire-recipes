@@ -11,8 +11,6 @@ tags:
 
 Lets say that you want to maintain a log of every email sent from your site.
 
----
-
 ## Solution
 
 This can be done quite easily by hooking the WireMail class. Place the following in your /site/ready.php file:

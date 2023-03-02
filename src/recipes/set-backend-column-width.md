@@ -12,8 +12,6 @@ tags:
 
 You want to set backend field widths, bypassing the admin interface
 
----
-
 ## Solution
 
 Set inputfield column widths via API:

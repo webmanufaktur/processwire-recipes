@@ -13,8 +13,6 @@ tags:
 
 You need to run any process after saving pages.
 
----
-
 ## Solution
 
 The best way to add those extra process(es) is via a small autoload module. This can be placed in `/site/modules/HookAfterPagesSave/HookAfterPagesSave.module`. Now you can manage and extend this like every other module as well. You can change the things to be changed in the afterSaveReady() method, add module settings to give easy access to potential user manageable settings. Also you can easily enable/disable this at any time.

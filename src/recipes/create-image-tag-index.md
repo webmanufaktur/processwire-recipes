@@ -8,7 +8,9 @@ tags:
     - index
 ---
 
-## Problem You need to collect all tags from image fields and create a link list to then filter pages with images that have the selected tag.
+## Problem
+
+You need to collect all tags from image fields and create a link list to then filter pages with images that have the selected tag.
 
 ## Solution
 

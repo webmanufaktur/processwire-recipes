@@ -14,8 +14,6 @@ You have a search page – be it your regular site search or something more spec
 
 Searching from multiple fields is easy, but if overused, it can really kill the performance of those search queries. We need a solution that finds content from multiple fields with just one query. In other words: we need a search index.
 
----
-
 ## Solution
 
 We're going to use the native Fieldtype Cache to build a rudimentary search index:

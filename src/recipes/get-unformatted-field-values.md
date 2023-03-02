@@ -11,8 +11,6 @@ tags:
 
 You need to return a field value unformatted in order to format it individually later.
 
----
-
 ## Solution
 
 You can access the naked field value with the getUnformatted method like so:

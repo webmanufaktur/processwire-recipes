@@ -12,8 +12,6 @@ tags:
 
 You have a pool of pages, e.g. quotes/testimonials, and want to display a random one.
 
----
-
 ## Solution
 
 A little example how to pull a random page:

@@ -12,8 +12,6 @@ tags:
 
 If you do not wish to create forms via the ProcessWire API, but still aiming to use PW's form features, you can use its CRSF (Cross-Site Request Forgery) preventing features like so:
 
----
-
 ## Solution
 
 First you need to create a token and a token name, you do that as following:

@@ -12,8 +12,6 @@ tags:
 
 You've already optimized your website for Google Pagespeed but it keeps complaining you should "[inline critical / above the fold CSS](https://developers.google.com/speed/pagespeed/service/PrioritizeCriticalCss)".
 
----
-
 ## Solution
 
 _This solution depends on several tools that make the "build" process a lot easier. If you've got any questions about how to use them don't hesitate to ask in the related forum thread which can be found in the resources._

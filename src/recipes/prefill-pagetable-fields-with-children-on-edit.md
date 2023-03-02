@@ -11,8 +11,6 @@ tags:
 
 Editing children is not very intuitive right away. The goal is to provide easy ordering and editing of children without loosing the page contect. Using a PageTable field to make this more intuitive, but children are not added automatically to this field.
 
----
-
 ## Solution
 
 I use a PageTable field to make edits to children of pages more intuitive…

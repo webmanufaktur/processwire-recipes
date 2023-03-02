@@ -15,8 +15,6 @@ and have a local db dump of the live site on your system but you don't want the
 user to make changes in the meantime. A restore from local back to live would
 otherwise overwrite the user's changes.
 
----
-
 ## Solution
 
 Add this on top of your `/site/templates/admin.php`

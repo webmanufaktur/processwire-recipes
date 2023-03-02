@@ -8,9 +8,13 @@ tags:
     - thumbnails
 ---
 
-## Problem Lets say that you've recently upgraded to ProcessWire 3.x and noticed that all of your thumbnail images are low-quality in the admin.
+## Problem
 
-## Solution This is because PW 2.7 used 100-pixel height thumbnails, while PW 3.x uses 260 pixel width thumbnails, quite a size difference. When in the page editor, you'll notice those images look pretty low quality, and that PW gives you a little checkbox you can check to force it to re-create them. But if you've got dozens, hundreds or thousands of pages, you probably aren't going to bother. Here's a way that you can force it to re-create automatically. In your /site/config.php file, add the following:
+Lets say that you've recently upgraded to ProcessWire 3.x and noticed that all of your thumbnail images are low-quality in the admin.
+
+## Solution
+
+This is because PW 2.7 used 100-pixel height thumbnails, while PW 3.x uses 260 pixel width thumbnails, quite a size difference. When in the page editor, you'll notice those images look pretty low quality, and that PW gives you a little checkbox you can check to force it to re-create them. But if you've got dozens, hundreds or thousands of pages, you probably aren't going to bother. Here's a way that you can force it to re-create automatically. In your /site/config.php file, add the following:
 
 ```php
 $config->adminThumbOptions('height', 202);

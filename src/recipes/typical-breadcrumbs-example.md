@@ -13,8 +13,6 @@ tags:
 
 You want to create a typical breadcrumb list, with last item not linked and showing the current page
 
----
-
 ## Solution
 
 ```php

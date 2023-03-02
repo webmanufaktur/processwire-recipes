@@ -12,11 +12,13 @@ tags:
 
 You want to enhance (screenreader) accessibility on a "read more" link in a teaser scenario like this:
 
+**Image no longer exists**
+
+```md
 ![Teaser Scenario](https://bigger-on-the-inside.net/site/assets/files/1037/news-demo-v1.png)
+```
 
 [W3C's Accessibility Guidelines on links and content](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
-
----
 
 ## Solution
 

@@ -13,8 +13,6 @@ tags:
 
 For some reason, you have managed to lock yourself out of a site you are currently developing.
 
----
-
 ## Solution
 
 Paste the following into a file (e.g. "reset.php") in the root folder of the site, then run it.

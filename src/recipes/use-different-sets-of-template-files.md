@@ -12,8 +12,6 @@ tags:
 
 You want to use a different location than `site/templates` when storing your template files - or use different sets of template files in parallel, based on a certain switch.
 
----
-
 ## Solution
 
 You are able to overrule this setting from the site/config.php as follows

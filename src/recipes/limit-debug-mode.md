@@ -11,8 +11,6 @@ tags:
 
 Often times, one forgets to switch off ProcessWire's debug mode before deploying to the live environment
 
----
-
 ## Solution
 
 Here's a Laravel-inspired mini tutorial to prevent that - in this case utilizing MAMP Pro 3:

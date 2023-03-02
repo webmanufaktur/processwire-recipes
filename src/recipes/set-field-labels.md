@@ -12,8 +12,6 @@ tags:
 
 You have a multi-language setup and want to set language-specific labels, bypassing admin interface
 
----
-
 ## Solution
 
 If you want to activate all languages, use this after your page-creation API script. In this real-life scenario I had to import product pages, hence the template-selector below.
