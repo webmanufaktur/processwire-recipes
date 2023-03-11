@@ -1,11 +1,12 @@
 ---
 title: "Debug: Show all template field names and labels (for each language)"
 version: "1.0.1"
-authors: dragan
+authors:
+  - dragan
 tags:
-    - pages
-    - multilanguage
-    - fields
+  - pages
+  - multilanguage
+  - fields
 ---
 
 ## Problem

@@ -1,7 +1,9 @@
 ---
 title: "Create an index / linklist of all used image tags"
 version: 1.0.0
-authors: soma, teppo
+authors:
+    - soma
+    - teppo
 tags:
     - images
     - index

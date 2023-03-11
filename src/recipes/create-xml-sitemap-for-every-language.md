@@ -1,12 +1,13 @@
 ---
 title: "Create an XML sitemap for every language"
 version: 1.0.2
-authors: dragan
+authors:
+  - dragan
 tags:
-    - pages
-    - multilanguage
-    - xml-sitemap
-    - seo
+  - pages
+  - multilanguage
+  - xml-sitemap
+  - seo
 ---
 
 ## Problem

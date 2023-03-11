@@ -1,7 +1,8 @@
 ---
 title: "Use different sets of template files, e.g. based on hostname"
 version: 1.0.0
-authors: Raymond Geerts
+authors:
+    - Raymond Geerts
 tags:
     - URL
     - templates

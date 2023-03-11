@@ -1,7 +1,8 @@
 ---
 title: "Logging all outgoing e-mails"
 version: 1.0.0
-authors: ryan
+authors:
+    - ryan
 tags:
     - email
     - log

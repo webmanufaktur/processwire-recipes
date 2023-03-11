@@ -1,7 +1,8 @@
 ---
 title: "Use CSRF in your own forms"
 version: 1.0.2
-authors: Harmster
+authors:
+    - Harmster
 tags:
     - forms
     - csrf

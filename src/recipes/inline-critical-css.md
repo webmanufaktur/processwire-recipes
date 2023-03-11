@@ -1,7 +1,9 @@
 ---
 title: "Inline critical above the fold css"
 version: 1.1.1
-authors: felixwahner, neuwaerts
+authors:
+    - felixwahner
+    - neuwaerts
 tags:
     - css
     - performance

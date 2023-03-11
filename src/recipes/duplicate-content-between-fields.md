@@ -1,7 +1,8 @@
 ---
 title: "Duplicate content from one field to another"
 version: 1.0.3
-authors: adrian
+authors:
+    - adrian
 tags:
     - fields
     - content

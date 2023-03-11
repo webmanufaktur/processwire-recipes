@@ -1,7 +1,8 @@
 ---
 title: "Best way to implement a global utility function"
 version: 1.0.0
-authors: horst
+authors:
+    - horst
 tags:
     - config
     - autoload

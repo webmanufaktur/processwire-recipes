@@ -1,7 +1,8 @@
 ---
 title: "Set up a really simple search index using FieldtypeCache"
 version: 1.0.1
-authors: teppo
+authors:
+    - teppo
 tags:
     - cache
     - search

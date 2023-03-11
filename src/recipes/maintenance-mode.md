@@ -1,7 +1,8 @@
 ---
 title: "Maintenance Mode"
 version: 1.0.3
-authors: owzim
+authors:
+    - owzim
 tags:
     - admin
     - maintenance

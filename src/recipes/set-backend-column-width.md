@@ -1,11 +1,12 @@
 ---
 title: "Set backend field column width via API"
 version: 1.0.1
-authors: dragan
+authors:
+  - dragan
 tags:
-    - fields
-    - backend
-    - width
+  - fields
+  - backend
+  - width
 ---
 
 ## Problem

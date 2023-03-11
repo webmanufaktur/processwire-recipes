@@ -1,11 +1,12 @@
 ---
 title: "Set language-specific input field labels via API"
 version: 1.0.1
-authors: dragan
+authors:
+  - dragan
 tags:
-    - pages
-    - multilanguage
-    - labels
+  - pages
+  - multilanguage
+  - labels
 ---
 
 ## Problem

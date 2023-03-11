@@ -1,7 +1,8 @@
 ---
 title: "Cache the result of a function"
 version: 1.0.0
-authors: owzim
+authors:
+    - owzim
 tags:
     - cache
     - performance

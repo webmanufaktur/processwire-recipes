@@ -1,7 +1,8 @@
 ---
 title: "Benchmark code execution time"
 version: 1.0.0
-authors: ryan
+authors:
+    - ryan
 tags:
     - debug
     - time

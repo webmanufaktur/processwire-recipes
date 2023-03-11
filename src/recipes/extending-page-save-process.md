@@ -1,7 +1,8 @@
 ---
 title: "Extending page save process"
 version: 1.0.1
-authors: lostkobrakai
+authors:
+    - LostKobrakai
 tags:
     - pages
     - modules

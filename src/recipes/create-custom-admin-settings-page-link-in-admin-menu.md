@@ -1,7 +1,8 @@
 ---
 title: "Create custom admin settings page link in admin menu"
 version: 1.0.0
-authors: jlahijani
+authors:
+    - jlahijani
 tags:
     - page
     - settings

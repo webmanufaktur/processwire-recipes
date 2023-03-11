@@ -1,7 +1,12 @@
 ---
 title: "Resetting admin password via API"
 version: 1.0.5
-authors: Nico Knoll, owzim, mindplay-dk, LostKobrakai, arjen
+authors:
+    - Nico Knoll
+    - owzim
+    - mindplay-dk
+    - LostKobrakai
+    - arjen
 tags:
     - api
     - users

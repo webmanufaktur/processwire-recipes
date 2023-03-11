@@ -1,7 +1,9 @@
 ---
 title: "Field/template context"
 version: 1.0.0
-authors: owzim, kongondo
+authors:
+    - owzim
+    - kongondo
 tags:
     - api
     - templates

@@ -1,7 +1,9 @@
 ---
 title: "Change homepage's default language"
 version: 1.0.1
-authors: bcartier, ESRCH
+authors:
+    - bcartier
+    - ESRCH
 tags:
     - multilanguage
     - homepage

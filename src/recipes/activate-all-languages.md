@@ -1,10 +1,11 @@
 ---
 title: "Activate all languages on pages created via API"
 version: 1.0.1
-authors: dragan
+authors:
+  - dragan
 tags:
-    - pages
-    - multilanguage
+  - pages
+  - multilanguage
 ---
 
 ## Problem
@@ -31,4 +32,4 @@ foreach($pag as $p) {
 
 ### Resources
 
--   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/activateAllLanguages.php)
+- [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/activateAllLanguages.php)

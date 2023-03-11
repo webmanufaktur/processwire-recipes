@@ -1,7 +1,8 @@
 ---
 title: "Find latest modified (sub)child of a page"
 version: 1.0.0
-authors: isellsoap
+authors:
+    - isellsoap
 tags:
     - pages
     - modified

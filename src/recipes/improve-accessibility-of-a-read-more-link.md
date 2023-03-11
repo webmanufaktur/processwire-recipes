@@ -1,7 +1,7 @@
 ---
-title: "Improve accessibility of a read more link
-version: 1.0.0"
-authors: marcus
+title: "Improve accessibility of a read more link version: 1.0.0"
+authors:
+    - marcus
 tags:
     - a11y
     - accessibility

@@ -1,12 +1,13 @@
 ---
 title: "Typical breadcrumbs example"
 version: 1.0.1
-authors: dragan
+authors:
+  - dragan
 tags:
-    - template
-    - pages
-    - parent
-    - breadcrumbs
+  - template
+  - pages
+  - parent
+  - breadcrumbs
 ---
 
 ## Problem
