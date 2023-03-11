@@ -1,0 +1,191 @@
+{
+  "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "SEO: Title",
+          "name": "seotitle",
+          "type": "string"
+        },
+        {
+          "title": "SEO: Description",
+          "name": "seodesc",
+          "type": "string"
+        },
+        {
+          "title": "SEO: Robots",
+          "name": "seorobots",
+          "type": "choice",
+          "choices": [
+            "",
+            "index, follow",
+            "noindex, follow",
+            "noindex, nofollow"
+          ]
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "Authors",
+          "name": "authors",
+          "type": "taxonomy",
+          "taxonomyId": "authors"
+        }
+      ]
+    }
+  ],
+  "frontMatter.telemetry.disable": true,
+  "frontMatter.framework.id": "11ty",
+  "frontMatter.preview.host": "http://localhost:8080",
+  "frontMatter.content.fmHighlight": false,
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "pages",
+      "path": "[[workspace]]/src/pages"
+    },
+    {
+      "title": "recipes",
+      "path": "[[workspace]]/src/recipes"
+    }
+  ],
+  "frontMatter.taxonomy.tags": [
+    "URL",
+    "a11y",
+    "accessibility",
+    "admin",
+    "api",
+    "autoload",
+    "backend",
+    "breadcrumbs",
+    "cache",
+    "children",
+    "config",
+    "content",
+    "context",
+    "copy",
+    "creation",
+    "csrf",
+    "css",
+    "debug",
+    "email",
+    "emergency",
+    "fancybox",
+    "fields",
+    "fold",
+    "forms",
+    "helpers",
+    "homepage",
+    "html",
+    "images",
+    "index",
+    "javascript",
+    "labels",
+    "latest",
+    "log",
+    "maintenance",
+    "modal",
+    "modified",
+    "modules",
+    "multilanguage",
+    "page",
+    "page title",
+    "pages",
+    "pagination",
+    "parent",
+    "password",
+    "performance",
+    "processwire3",
+    "random",
+    "search",
+    "security",
+    "seo",
+    "session",
+    "settings",
+    "shuffle",
+    "structure",
+    "switches",
+    "tag",
+    "tags",
+    "template",
+    "templates",
+    "thumbnails",
+    "time",
+    "title",
+    "unformatted",
+    "users",
+    "width",
+    "xml-sitemap"
+  ],
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "authors",
+      "options": [
+        "dragan",
+        "LostKobrakai",
+        "apeisa",
+        "marcus",
+        "Raymond Geerts",
+        "Harmster",
+        "teppo",
+        "Nico Knoll",
+        "owzim",
+        "mindplay-dk",
+        "arjen",
+        "dsdsdsds",
+        "noelboss",
+        "ryan",
+        "felixwahner",
+        "neuwaerts",
+        "Tom Arnold",
+        "SiNNuT",
+        "isellsoap",
+        "kongondo",
+        "rajo",
+        "adrian",
+        "soma",
+        "jlahijani",
+        "bcartier",
+        "ESRCH",
+        "horst",
+        "Martijn Geerts",
+        "Philipp",
+        "ceberlin"
+      ]
+    }
+  ]
+}

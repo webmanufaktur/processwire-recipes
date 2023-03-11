@@ -2,45 +2,60 @@
 layout: base.html
 ---
 
-<article class="prose max-w-2xl mx-auto">
-    <div>
-        <h1>{{ title }}</h1>
-    </div>
-    <div class="flex gap-4">
-        <div>
-            <strong>Version:</strong>
-            <br />
-            {% if version %} {{ version }} {% else %}
-            <em>NA</em>
-            {% endif %}
-        </div>
-        <div>
-            <strong>Authors:</strong>
-            <br />
-            {{ authors }}
-        </div>
-        <div>
-            <strong>Tags:</strong>
-            <div>
-                {% for tag in tags %} {% if tag != "recipes" %}
-                <a
-                    href="/topic/{{ tag | slugify }}/"
-                    class="bg-zinc-100 border-2 border-zinc-200 p-1 rounded"
-                    >{{ tag }}</a
-                >
-                {% endif %} {% endfor %}
-            </div>
-        </div>
-    </div>
-    <div>{{ content | safe }}</div>
+<!-- import macro -->
+{% from "macros.html" import button, hero %}
 
-    <div>
-        <h3>Found a problem, error or mistake? Fix it, please!</h3>
-        <a
-            href="https://github.com/webmanufaktur/processwire-recipes/blob/master/{{ page.inputPath }}"
-            rel="nofollow noreferrer noopener"
-            target="_blank"
-            >Go and edit this recipe on GitHub.</a
-        >
+<article>
+  {{ hero(title) }}
+
+  <div class="max-w-5xl mx-auto">
+    <div class="grid grid-cols-4 gap-8">
+      <div class="bg-white col-span-3 prose max-w-none p-8 shadow-lg">
+        {{ content | safe }}
+      </div>
+
+      <div class="col-start-4 col-end-5 row-start-1">
+        <div class="sticky top-12 space-y-6">
+          {% if version %}
+          <div>
+            <span class="block text-xs uppercase tracking-widest"
+              >Version:</span
+            >
+            <span class="font-semibold">{{ version }}</span>
+          </div>
+          {% endif %} {% if authors %}
+          <div>
+            <span class="block text-xs uppercase tracking-widest"
+              >Authors:</span
+            >
+            {% for author in authors %}
+            <span class="capitalize font-semibold">{{ author }}</span>{% if not
+            loop.last %}, {% endif %}{% endfor %}
+          </div>
+          {% endif %} {% if tags.length > 1 %}
+          <div>
+            <span class="block text-xs uppercase tracking-widest">Tags:</span>
+            <div>
+              <ul class="space-y-1">
+                {% for tag in tags %} {% if tag != "recipes" %}
+                <li>{% include "_partials/tag.html" %}</li>
+                {% endif %} {% endfor %}
+              </ul>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
     </div>
+
+    <div class="bg-red-200">
+      <h3>Found a problem, error or mistake? Fix it, please!</h3>
+      <a
+        href="https://github.com/webmanufaktur/processwire-recipes/blob/master/{{ page.inputPath }}"
+        rel="nofollow noreferrer noopener"
+        target="_blank"
+        >Go and edit this recipe on GitHub.</a
+      >
+    </div>
+  </div>
 </article>

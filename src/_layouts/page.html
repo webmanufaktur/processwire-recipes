@@ -2,9 +2,11 @@
 layout: base.html
 ---
 
-<article class="prose max-w-2xl mx-auto">
-    <div>
-        <h1>{{ title }}</h1>
-    </div>
-    <div>{{ content | safe }}</div>
+<!-- import macro -->
+{% from "macros.html" import button, hero %}
+<!-- for -->
+
+<article class="pb-24">
+  {{ hero(title) }}
+  <div class="bg-white shadow-lg p-8 prose mx-auto">{{ content | safe }}</div>
 </article>

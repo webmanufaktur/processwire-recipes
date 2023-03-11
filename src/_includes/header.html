@@ -1,0 +1,47 @@
+<!-- import macro -->
+{% from "macros.html" import button %}
+<!-- for -->
+
+<header class="py-8">
+  <div class="flex justify-between items-center mx-auto max-w-5xl">
+    <div>
+      <a
+        href="/"
+        class="font-bold inline-block text-lg md:text-xl leading-5 md:leading-6"
+      >
+        ProcessWire<br class="" />Recipes<span
+          class="text-pwblue font-extrabold"
+          >_</span
+        >
+      </a>
+    </div>
+    <nav class="hidden md:block">
+      <ul class="flex justify-center items-center gap-8">
+        {% for link in navigation.main %}
+        <li>
+          <a href="{{ link.url }}" class=" {{ link.classes}}"
+            >{{ link.label }}</a
+          >
+        </li>
+        {% endfor %}
+        <li>{{ button("Submit recipe", "/submit-recipe/") }}</li>
+      </ul>
+    </nav>
+    <button role="button" class="bg-pwblue text-white rounded-md p-3 md:hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+        />
+      </svg>
+    </button>
+  </div>
+</header>

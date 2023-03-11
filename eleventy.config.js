@@ -258,11 +258,33 @@ module.exports = function (eleventyConfig) {
     // TAG CLOUD
     // Return all the tags used in a collection
     eleventyConfig.addFilter("getAllTags", (collection) => {
-        let tagSet = new Set();
+        let collectionSet = new Set();
         for (let item of collection) {
-            (item.data.tags || []).forEach((tag) => tagSet.add(tag));
+            (item.data.tags || []).forEach((item) => collectionSet.add(item));
         }
-        return Array.from(tagSet);
+        return Array.from(collectionSet);
+    });
+
+    // Return all the authors used in a collection
+    eleventyConfig.addFilter("getAllAuthors", (collection) => {
+        let collectionSet = new Set();
+        for (let item of collection) {
+            (item.data.authors || []).forEach((item) =>
+                collectionSet.add(item)
+            );
+        }
+        return Array.from(collectionSet).sort();
+    });
+
+    // Return all the categories used in a collection
+    eleventyConfig.addFilter("getAllCategories", (collection) => {
+        let collectionSet = new Set();
+        for (let item of collection) {
+            (item.data.categories || []).forEach((item) =>
+                collectionSet.add(item)
+            );
+        }
+        return Array.from(collectionSet);
     });
 
     eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {

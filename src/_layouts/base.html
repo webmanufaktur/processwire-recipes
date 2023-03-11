@@ -2,36 +2,14 @@
 layout: _main.html
 ---
 
-<header class="bg-blue-500 text-white py-6 px-4">
-    <div
-        class="flex justify-between items-center mx-auto max-w-2xl text-center"
-    >
-        <div>
-            <a href="/" class="font-bold">{{ config.title }}</a>
-        </div>
-        <nav class="">
-            <ul class="flex justify-center items-center gap-8">
-                {% for link in navigation.main %}
-                <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
-    </div>
-</header>
+<!-- HEADER -->
+{% include "header.html" %}
 
-<main class="py-12 px-4">{{ content | safe }}</main>
+<!-- CONTENT -->
+<main>{{ content | safe }}</main>
 
-<footer class="bg-blue-500 text-white py-6">
-    <ul class="flex justify-center items-center gap-8">
-        {% for link in navigation.footer %}
-        <li>
-            <a
-                href="{{ link.url }}"
-                class="text-sm tracking-wider uppercase"
-                rel="nofollow"
-                >{{ link.label }}</a
-            >
-        </li>
-        {% endfor %}
-    </ul>
-</footer>
+<!-- FOOTER -->
+{% include "authors.html" %}
+
+<!-- FOOTER -->
+{% include "footer.html" %}
