@@ -1,5 +1,9 @@
 ---
 title: "About"
+seotitle: "SEO Title"
+seodesc: "SEO DESC"
+seorobots: index, follow
+draft: false
 ---
 
 Since `processwire-recipes.com` went down and never came back 😔 I decided to play around with all the ProcessWire Recipes and moved it over to a fresh new instance of 11ty running on Cloudflare Pages with a public Github Directory.
@@ -7,6 +11,12 @@ Since `processwire-recipes.com` went down and never came back 😔 I decided to 
 **Update: 2023-03-05**
 
 We now have full access to the old/former Github account and repository. In the near future there will be a slight change in submitting new recipes and changes.
+
+**Update: 2023-03-11**
+
+[processwire.recipes](https://processwire.recipes/) is our new home now. While this is already awesome we will soon switch back to the [old official Github repo](https://github.com/processwire-recipes/Recipes) but with a new markdown format for upcoming recipes and updates.
+
+See: [Forum announcement](https://processwire.com/talk/topic/7572-processwire-recipes/page/3/#comment-231247)
 
 ## ProcessWire Recipes Legacy (Github)
 
