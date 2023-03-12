@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ title }}</title>
-    <link rel="canonical" href="{{ config.url }}{{ page.url }}" />
+    <title>{{ seo.title or title }}</title>
+    {% if seo.desc %}
+    <meta name="description" content="{{ seo.desc }}" />
+    {% endif %}
+    <!-- -->
+    {% if seo.robots %}
     <meta name="robots" content="{{ seo.robots }}" />
+    {% else %}
+    <meta name="robots" content="index, follow" />
+    {% endif %}
+    <link rel="canonical" href="{{ config.url }}{{ page.url }}" />
     <link
       rel="preload"
       href="/assets/fonts/montserrat/montserrat.css"
@@ -22,7 +30,7 @@
       }
     </script>
   </head>
-  <body class="">
+  <body>
     {{ content | safe }}
   </body>
 </html>
