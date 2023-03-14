@@ -8,6 +8,7 @@ tags:
     - modules
     - helpers
     - autoload
+    - hook
 ---
 
 ## Problem
