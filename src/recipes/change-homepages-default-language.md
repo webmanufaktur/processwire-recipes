@@ -8,6 +8,7 @@ tags:
     - multilanguage
     - homepage
     - modules
+    - hook
 ---
 
 ## Problem

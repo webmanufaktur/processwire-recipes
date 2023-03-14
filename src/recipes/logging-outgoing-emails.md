@@ -6,6 +6,8 @@ authors:
 tags:
     - email
     - log
+    - hook
+    - ready
 ---
 
 ## Problem

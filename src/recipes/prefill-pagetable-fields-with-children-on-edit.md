@@ -6,6 +6,8 @@ authors:
 tags:
     - pages
     - fields
+    - hook
+    - init
 ---
 
 ## Problem
