@@ -17,6 +17,7 @@ const pluginTOC = require("eleventy-plugin-toc");
 const svgContents = require("eleventy-plugin-svg-contents");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const faviconPlugin = require("eleventy-favicon");
+const EleventyPluginOgImage = require("eleventy-plugin-og-image");
 
 // Details about HowTo enable MarkdownIt Image Figures
 // https://github.com/Antonio-Laguna/markdown-it-image-figures
@@ -181,6 +182,26 @@ module.exports = function (eleventyConfig) {
 
   // shortcode for inserting the current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  // ogimage2
+
+  eleventyConfig.addPlugin(EleventyPluginOgImage, {
+    satoriOptions: {
+      fonts: [
+        {
+          name: "Montserrat",
+          data: fs.readFileSync(
+            "./src/assets/fonts/montserrat/montserrat-v25-latin-regular.woff"
+          ),
+          weight: 400,
+          style: "normal",
+        },
+      ],
+    },
+    hashLength: 16,
+    outputDir: "_site/assets/media/",
+    urlPath: "/assets/media/",
+  });
 
   // rating
   eleventyConfig.addFilter("rating", function (rating) {
