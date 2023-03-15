@@ -1,6 +1,7 @@
 ---
 title: "Changelog"
-seorobots: "noindex, follow"
+seo:
+  robots: "noindex, follow"
 ---
 
 ## Upcoming
@@ -11,6 +12,11 @@ seorobots: "noindex, follow"
 - ☐ **www** -- Add 11ty/www setup to orga repository
 - ☐ **Community** -- Open submissions and collect community projects
 - ☐ **[Snippets](https://github.com/webmanufaktur/processwire-recipes/pull/3)** -- Testing, Review, and Release of VS Code Snippets
+- ☐ **Blog** -- You know what this is all about
+- ☐ **Guestposts** -- You know... guestposts in the blog
+- ☐ **Tutorials/HowTo** -- /tutorials /howto /whatever we will see
+- ☐ **Profiles** -- Introductions and details on available ProcessWire starters
+- ☐ **Starters** -- Custom community based starter profiles
 - ❓ **Categories** -- Adding categories to recipes?
 - ❓ **Content ideas** -- What's next?
 - ❗ **Form submissions** -- form-submission platform needed

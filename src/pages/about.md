@@ -1,8 +1,7 @@
 ---
 title: "About"
-seotitle: "SEO Title"
-seodesc: "SEO DESC"
-seorobots: index, follow
+seo:
+  robots: noindex, follow
 draft: false
 ---
 
