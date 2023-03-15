@@ -1,5 +1,7 @@
 ---
 title: "Links"
+seo:
+  robots: "noindex, follow"
 ---
 
 The plan is to publish all **ProcessWire Community Projects** here to give back to those who earn it!
@@ -17,6 +19,8 @@ logo: "https://project.tld/logo.png"
 cover: "https://project.tld/cover.png"
 ---
 ```
+
+## Example processwire.rocks
 
 ```md
 title: "ProcessWire.rocks"

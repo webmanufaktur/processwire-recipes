@@ -20,7 +20,7 @@ This guide will help you to submit your very own **ProcessWire Recipe** very soo
 title: "Recipe title"
 version: (if available)
 authors:
-  - "your forum name"
+  - "your forum name" || or other
 tags:
   - tags
   - matching
