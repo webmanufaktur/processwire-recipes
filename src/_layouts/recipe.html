@@ -9,19 +9,21 @@ layout: base.html
   {{ hero(title) }}
 
   <div class="max-w-5xl mx-auto">
-    <div class="grid grid-cols-4 gap-8">
+    <div class="md:grid grid-cols-4 gap-8">
       <div class="bg-white col-span-3 prose max-w-none p-8 shadow-lg">
         {{ content | safe }}
       </div>
 
-      <div class="col-start-4 col-end-5 row-start-1">
+      <div class="col-start-4 col-end-5 row-start-1 p-6 md:p-0">
         <div class="sticky top-12 space-y-6">
           {% if version %}
           <div>
             <span class="block text-xs uppercase tracking-widest"
               >Version:</span
             >
-            <span class="font-semibold">{{ version }}</span>
+            <span class="text-xs tracking-widest font-semibold tabular-nums"
+              >{{ version }}</span
+            >
           </div>
           {% endif %} {% if authors %}
           <div>
@@ -29,8 +31,9 @@ layout: base.html
               >Authors:</span
             >
             {% for author in authors %}
-            <span class="capitalize font-semibold">{{ author }}</span>{% if not
-            loop.last %}, {% endif %}{% endfor %}
+            <span class="uppercase text-xs tracking-widest font-semibold"
+              >{{ author }}</span
+            >{% if not loop.last %}, {% endif %}{% endfor %}
           </div>
           {% endif %} {% if tags.length > 1 %}
           <div>
@@ -48,7 +51,7 @@ layout: base.html
       </div>
     </div>
 
-    <div class="bg-red-200">
+    <div class="bg-red-200 hidden">
       <h3>Found a problem, error or mistake? Fix it, please!</h3>
       <a
         href="https://github.com/webmanufaktur/processwire-recipes/blob/master/{{ page.inputPath }}"

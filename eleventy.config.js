@@ -103,19 +103,19 @@ async function imageShortcodeRelative(src, alt, cls, wdth = "null") {
 async function imageShortcode(src, alt, cls, wdth = "null") {
   let metadata = await Image(src, {
     widths: wdth,
-    formats: ["webp"],
+    formats: ["jpg", "webp"],
     urlPath: "/assets/media/", // used in frontend
     outputDir: "_site/assets/media/", // used in dev
-    filenameFormat: function (id, src, width, format) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
+    // filenameFormat: function (id, src, width, format) {
+    //   const extension = path.extname(src);
+    //   const name = path.basename(src, extension);
 
-      return `${name}-${id}-${width}w.${format}`;
-    },
+    //   return `${name}-${id}-${width}w.${format}`;
+    // },
     cacheOptions: {
       duration: "1d",
       directory: ".cache",
-      removeUrlQueryParams: false,
+      removeUrlQueryParams: true,
     },
   });
   let imageAttributes = {
@@ -284,20 +284,22 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-    return (tags || []).filter(
-      (tag) =>
-        [
-          "all",
-          "nav",
-          "post",
-          "posts",
-          "pages",
-          "snippets",
-          "links",
-          "pillows",
-          "recipes",
-        ].indexOf(tag) === -1
-    );
+    return (tags || [])
+      .filter(
+        (tag) =>
+          [
+            "all",
+            "nav",
+            "post",
+            "posts",
+            "pages",
+            "snippets",
+            "links",
+            "pillows",
+            "recipes",
+          ].indexOf(tag) === -1
+      )
+      .sort();
   });
 
   // TRANSFORMS

@@ -17,3 +17,14 @@ logo: "https://project.tld/logo.png"
 cover: "https://project.tld/cover.png"
 ---
 ```
+
+```md
+title: "ProcessWire.rocks"
+desc: "ProcessWire rocks and you can't do anything against it!"
+started: "2022"
+author: "Bernhard Baumrock"
+authorForum: "bernhard"
+website: "https://processwire.rocks/"
+logo: "processwirerocks-logo.jpg"
+cover: ""
+```

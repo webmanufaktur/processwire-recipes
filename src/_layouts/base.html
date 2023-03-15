@@ -9,7 +9,12 @@ layout: _main.html
 <main>{{ content | safe }}</main>
 
 <!-- FOOTER -->
-{% include "authors.html" %}
 
+{% if page.url == "/" %}
+<!-- authors -->
+{% include "authors.html" %}
+<!-- /authors -->
+
+{% endif %}
 <!-- FOOTER -->
 {% include "footer.html" %}

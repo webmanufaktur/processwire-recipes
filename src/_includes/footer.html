@@ -1,11 +1,16 @@
-<footer class="py-6 px-6">
-  <div class="mx-auto max-w-5xl">
-    <ul class="flex justify-center items-center gap-8">
+<footer class="p-6 py-12">
+  <div class="mx-auto max-w-5xl md:flex md:items-center md:justify-between">
+    <div class="text-xs tracking-widest font-semibold uppercase">
+      &copy; 2014/{% year %} {{ config.title }}
+    </div>
+    <ul
+      class="md:flex md:justify-center md:items-center md:gap-8 mt-4 md:mt-0 space-y-2 md:space-y-0"
+    >
       {% for link in navigation.footer %}
-      <li>
+      <li class="md:flex md:items-center md:justify-center">
         <a
           href="{{ link.url }}"
-          class="text-sm tracking-wider uppercase"
+          class="text-xs tracking-widest font-semibold uppercase"
           rel="nofollow"
           >{{ link.label }}</a
         >

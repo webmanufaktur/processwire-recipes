@@ -6,7 +6,20 @@ layout: base.html
 {% from "macros.html" import button, hero %}
 <!-- for -->
 
-<article class="pb-24">
+<article class="pb-24 max-w-2xl mx-auto">
   {{ hero(title) }}
-  <div class="bg-white shadow-lg p-8 prose mx-auto">{{ content | safe }}</div>
+  <div
+    class="bg-white shadow-lg p-8 prose mx-auto prose-a:text-pwblue prose-a:font-semibold"
+  >
+    {{ content | safe }}
+  </div>
 </article>
+<!-- <div>
+  <a
+    href="https://github.com/webmanufaktur/processwire-recipes/blob/master/{{ page.inputPath }}"
+    rel="nofollow noreferrer noopener"
+    target="_blank"
+    class="block p-4 border-2 text-xs tracking-widest font-semibold uppercase text-gray-900 text-center no-underline"
+    >Go and edit this recipe on GitHub.</a
+  >
+</div> -->

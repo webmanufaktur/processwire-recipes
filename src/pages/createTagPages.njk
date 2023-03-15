@@ -1,52 +1,49 @@
 ---
 pagination:
-    data: collections
-    addAllPagesToCollections: true
-    size: 1
-    alias: tag
-    filter:
-        - all
-        - post
-        - posts
-        - tagList
-        - links
-        - pillows
-        - recipes
+  data: collections
+  addAllPagesToCollections: true
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - post
+    - posts
+    - tagList
+    - links
+    - pillows
+    - recipes
 eleventyComputed:
-    title: "ProcessWire Recipes: {{ tag }}"
-    titleRendered: More posts talking about <span class="block text-red-600">{{ tag }}</span>
-    seo:
-        title: More about {{ tag }}
-        desc: All posts, snippets and various other content talking about {{ tag }}.
-        robots: "noindex, nofollow"
+  title: "ProcessWire Recipes:<br /><span class='text-pwblue uppercase'>{{ tag }}</span>"
+  titleRendered: More recipes talking about <span class="block text-red-600">{{ tag }}</span>
+  seo:
+    title: "ProcessWire recipes about: {{ tag }}"
+    desc: All posts, snippets and various other content talking about {{ tag }}.
+    robots: "noindex, follow"
 permalink: /topic/{{ tag | slugify }}/
 layout: "base.html"
 ---
 
-<article class="prose max-w-2xl mx-auto">
-    <div>
-        <h1>{{ title }}</h1>
-    </div>
-    <div>{{ content | safe }}</div>
+<!-- import macro -->
+{% from "macros.html" import hero %}
 
-    <div>
-        <ul class="space-y-6">
-            {% for recipe in collections[ tag ] | sortByTitle %}
-            <li>
-                <a href="{{ recipe.url }}">{{ recipe.data.title }}</a>
-                <div class="mt-2">
-                    {% for tag in recipe.data.tags %}
-                     {% if tag != "recipes" %}
-                    <a
-                        href="/topic/{{ tag | slugify }}/"
-                        class="no-underline border-2 text-sm border-zinc-200 bg-zinc-100 rounded p-1"
-                        >#{{ tag }}</a
-                    >
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
+<article>
+  {{ hero(title) }}
+  <section class="bg-pwblue pb-24">
+    <ul class="space-y-8 md:space-y-12 max-w-3xl table mx-auto px-4">
+      {% for recipe in collections[ tag ] | sortByTitle %}
+      <li
+        class="-mt-16 border-2 border-stone-100 bg-white shadow-xl p-8 rounded"
+      >
+        <a href="{{ recipe.url }}" class="text-lg">{{ recipe.data.title }}</a>
+        <div class="mt-2 md:mt-4 flex gap-1 md:gap-2 flex-wrap">
+          {% for tag in recipe.data.tags %} {% if tag != "recipes" %} {% include
+          "_partials/tag.html" %} {% endif %} {% endfor %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 </article>
+
+<!-- Tags -->
+{# {% include "renderedTagCloud.html" %} #}

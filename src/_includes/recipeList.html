@@ -1,39 +1,13 @@
 <ul class="space-y-8 md:space-y-12 max-w-5xl table mx-auto px-4">
   {% for recipe in collections.recipes | sortByTitle %}
-  <li class="-mt-16 border-2 border-stone-100 bg-white shadow-xl p-8 rounded">
-    <a href="{{ recipe.url }}" class="text-lg">{{ recipe.data.title }}</a>
-    <div class="mt-2 md:mt-4">
-      {% for tag in recipe.data.tags %} {% if tag != "recipes" %} {% include
-      "_partials/tag.html" %} {% endif %} {% endfor %}
-    </div>
-  </li>
-  {% endfor %}
-</ul>
-<ul class="max-w-5xl mx-auto hidden">
-  {% for recipe in collections.recipes | sortByTitle %}
   <li
-    class="flex items-center justify-between bg-white rounded-lg even:bg-sky-100 py-2 px-4"
+    class="-mt-16 border-2 border-stone-100 bg-white shadow-xl p-6 md:p-8 rounded"
   >
-    <a href="{{ recipe.url }}" class="font-bold">{{ recipe.data.title }}</a>
-    <div class="mt-2 md:mt-4">
+    <a href="{{ recipe.url }}" class="text-lg">{{ recipe.data.title }}</a>
+    <div class="mt-2 md:mt-4 flex gap-1 md:gap-2 flex-wrap">
       {% for tag in recipe.data.tags %} {% if tag != "recipes" %} {% include
       "_partials/tag.html" %} {% endif %} {% endfor %}
     </div>
   </li>
   {% endfor %}
 </ul>
-<ol class="list-decimal space-y-6 max-w-5xl table mx-auto hidden" reversed>
-  {% for recipe in collections.recipes | sortByTitle %}
-  <li class="">
-    <a
-      href="{{ recipe.url }}"
-      class="text-lg text-pwblue underline underline-offset-8 font-semibold decoration-2 decoration-purple-600/30 hover:decoration-red-600 hover:text-sky-800"
-      >{{ recipe.data.title }}</a
-    >
-    <div class="hidden mt-2 md:mt-4">
-      {% for tag in recipe.data.tags %} {% if tag != "recipes" %} {% include
-      "_partials/tag.html" %} {% endif %} {% endfor %}
-    </div>
-  </li>
-  {% endfor %}
-</ol>

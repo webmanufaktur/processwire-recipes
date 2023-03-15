@@ -2,11 +2,11 @@
 title: "Use different sets of template files, e.g. based on hostname"
 version: 1.0.0
 authors:
-    - Raymond Geerts
+  - Raymond Geerts
 tags:
-    - URL
-    - templates
-    - switches
+  - url
+  - templates
+  - switches
 ---
 
 ## Problem
@@ -56,4 +56,4 @@ if($_SERVER['HTTP_HOST'] == 'm.domain.ext') {
 
 ### Resources
 
--   [Forum post](https://processwire.com/talk/topic/8789-should-all-template-files-put-under-sitetemplates-folder/#entry84861)
+- [Forum post](https://processwire.com/talk/topic/8789-should-all-template-files-put-under-sitetemplates-folder/#entry84861)

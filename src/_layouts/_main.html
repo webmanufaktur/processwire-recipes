@@ -14,14 +14,35 @@
     <meta name="robots" content="index, follow" />
     {% endif %}
     <link rel="canonical" href="{{ config.url }}{{ page.url }}" />
+
+    <!-- OG -->
+    <meta property="og:title" content="{{ seo.title or title }}" />
+    {% if seo.desc %}
+    <meta property="og:description" content="{{ seo.desc }}" />
+    {% endif %}
+    <meta
+      property="og:image"
+      content="{{ config.url }}/assets/images/processwire-recipes-ogimage.png"
+    />
+
+    <!-- CSS -->
     <link
       rel="preload"
       href="/assets/fonts/montserrat/montserrat.css"
       as="style"
     />
     <link rel="stylesheet" href="/assets/fonts/montserrat/montserrat.css" />
+    <link
+      rel="preload"
+      href="/assets/fonts/montserrat/montserrat-v25-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="preload" href="/assets/css/tailwind.dist.css" as="style" />
     <link rel="stylesheet" href="/assets/css/tailwind.dist.css" />
+
+    <!-- JS -->
     <script>
       if (localStorage.getItem("color-theme") === "dark") {
         document.documentElement.classList.add("dark");
@@ -30,7 +51,7 @@
       }
     </script>
   </head>
-  <body>
+  <body class="text-gray-900">
     {{ content | safe }}
   </body>
 </html>

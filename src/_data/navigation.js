@@ -3,12 +3,12 @@ module.exports = {
     {
       label: "About",
       url: "/about/",
-      classes: "font-semibold text-lg",
+      classes: "text-sm tracking-widest font-semibold uppercase",
     },
     {
       label: "Links",
       url: "/links/",
-      classes: "font-semibold text-lg",
+      classes: "text-sm tracking-widest font-semibold uppercase",
     },
     // {
     //   label: "Submit recipe",
@@ -19,12 +19,20 @@ module.exports = {
   ],
   footer: [
     {
+      label: "Changelog",
+      url: "/changelog/",
+    },
+    {
+      label: "Code of Conduct",
+      url: "/code-of-conduct/",
+    },
+    {
       label: "Imprint",
-      url: "https://webmanufaktur.net/impressum/",
+      url: "/imprint/",
     },
     {
       label: "Privacy",
-      url: "https://webmanufaktur.net/datenschutz/",
+      url: "/privacy/",
     },
   ],
 };

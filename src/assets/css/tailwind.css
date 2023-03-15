@@ -165,3 +165,7 @@ pre[class*="language-"] {
   margin-right: -50vw;
   /* padding: 0 1rem; */
 }
+
+article a {
+  overflow-wrap: break-word;
+}
