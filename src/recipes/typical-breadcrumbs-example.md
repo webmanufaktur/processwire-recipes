@@ -4,10 +4,10 @@ version: 1.0.1
 authors:
   - dragan
 tags:
-  - template
+  - breadcrumbs
   - pages
   - parent
-  - breadcrumbs
+  - templates
 ---
 
 ## Problem
@@ -49,4 +49,4 @@ echo "</ul>";
 
 ### Resources
 
--   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/breadcrumbs.inc)
+- [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/breadcrumbs.inc)
