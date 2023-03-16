@@ -23,6 +23,13 @@ seo:
 
 ---
 
+## ℹ️ 2023-03-16
+
+- Minor _design_ tweaks and formatting
+- Updated recipe formatting (see [Submit recipe](/submit-recipe/))
+
+---
+
 ## 2023-03-14
 
 ### ✅ Recipe updates and snippets
@@ -37,7 +44,7 @@ In case you want to jump in... watch our [Github](https://github.com/processwire
 
 ### 🔥 Changelog
 
-Added [Changelog](/changelog/).
+Added [Changelog](/changelog/) (this page).
 
 ### 🔥 CoC
 
@@ -47,9 +54,11 @@ Added [Code of Conduct](/code-of-conduct/). _(Please read!)_
 
 ## ℹ️ 2023-03-11
 
+### Old Github Account
+
 In the last few days [@marcus](https://processwire.com/talk/profile/912-marcus/) and I talked and he made me a member and owner of the _old_ [organization account on Github](https://github.com/processwire-recipes/) so we can still use the old/former official repository - that's **awesome**!
 
-Yet... the old domain is long gone. I tried to contact the new owner but no chance so far. Even through buyback-services and domainer/s.
+Yet... the old domain is long gone. I tried to contact the new owner but no chance so far. Even through buyback-services and domainer/s that's why...
 
 ### 💯 New domain
 
@@ -59,19 +68,13 @@ That's why I bought the [processwire.recipes](https://processwire.recipes/) doma
 
 I will update all recipes to the new markdown format, while keeping a copy of the legacy version in a separate branch/version. I will update all guides on how to submit and update recipes in the next few days.
 
+See: [Forum announcement](https://processwire.com/talk/topic/7572-processwire-recipes/page/3/#comment-231247)
+
 ---
 
 ## 2023-03-05
 
 We now have full access to the old/former Github account and repository. In the near future there will be a slight change in submitting new recipes and changes.
-
----
-
-## 2023-03-11
-
-[processwire.recipes](https://processwire.recipes/) is our new home now. While this is already awesome we will soon switch back to the [old official Github repo](https://github.com/processwire-recipes/Recipes) but with a new markdown format for upcoming recipes and updates.
-
-See: [Forum announcement](https://processwire.com/talk/topic/7572-processwire-recipes/page/3/#comment-231247)
 
 ---
 
