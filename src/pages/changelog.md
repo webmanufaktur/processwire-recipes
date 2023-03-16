@@ -8,6 +8,8 @@ seo:
 
 - ⭐ [Star this repo on Github](https://github.com/processwire-recipes/) **[THAT'S YOUR TASK!]**
 - ☐ **Recipes** -- Merge latest changes back to old/orga repository
+- ☐ **Topics/Tags** -- Overview of all topics/tags
+- ☐ **Credits** -- List of all contributors and authors
 - ☐ **wbmnfktr snippets** -- Merge [wbmnfktr/snippets](https://github.com/webmanufaktur/processwire-snippets)
 - ☐ **www** -- Add 11ty/www setup to orga repository
 - ☐ **Community** -- Open submissions and collect community projects
@@ -27,6 +29,7 @@ seo:
 
 - Minor _design_ tweaks and formatting
 - Updated recipe formatting (see [Submit recipe](/submit-recipe/))
+- Added CSS and JS cache busting via `?cache={{ config.timestamp }}`
 
 ---
 
