@@ -1,9 +1,15 @@
 <section class="py-8 px-4 md:py-12">
-  {# flex justify-center items-center gap-4 max-w-4xl mx-auto flex-wrap #} {#
-  grid grid-cols-4 gap-4 grid-flow-dense md:justify-center#}
-  <ul class="max-w-5xl md:flex gap-4 md:flex-wrap grid grid-cols-2 mx-auto">
-    {% for tag in collections.all | getAllTags | filterTagList %}
-    <li>{% include "_partials/tag.html" %}</li>
-    {% endfor %}
-  </ul>
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-xl md:text-2xl font-bold">
+      Topics the ProcessWire recipes handle
+    </h2>
+
+    <ul
+      class="mt-8 max-w-5xl md:flex gap-4 md:flex-wrap grid grid-cols-2 mx-auto"
+    >
+      {% for tag in collections.all | getAllTags | filterTagList %}
+      <li>{% include "_partials/tag.html" %}</li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
