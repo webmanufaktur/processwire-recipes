@@ -169,3 +169,11 @@ pre[class*="language-"] {
 article a {
   overflow-wrap: break-word;
 }
+.pw-gradient {
+  background: linear-gradient(
+    to bottom,
+    white 4rem,
+    #2480e6 4rem calc(100% - 4rem),
+    white calc(100% - 4rem)
+  );
+}

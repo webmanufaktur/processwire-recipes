@@ -1,8 +1,6 @@
 <ul class="space-y-8 md:space-y-12 max-w-5xl table mx-auto px-4">
   {% for recipe in collections.recipes | sortByTitle %}
-  <li
-    class="-mt-16 border-2 border-stone-100 bg-white shadow-xl p-6 md:p-8 rounded"
-  >
+  <li class="border-2 border-stone-100 bg-white shadow-xl p-6 md:p-8 rounded">
     <a href="{{ recipe.url }}" class="text-lg">{{ recipe.data.title }}</a>
     <div class="mt-2 md:mt-4 flex gap-1 md:gap-2 flex-wrap">
       {% for tag in recipe.data.tags %} {% if tag != "recipes" %} {% include
