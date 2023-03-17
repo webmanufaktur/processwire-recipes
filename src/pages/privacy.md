@@ -64,7 +64,7 @@ We herewith advise you that the transmission of data via the Internet (i.e., thr
 
 The data processing controller on this website is:
 
-STADTRAND
+PROCESSWIRE.RECIPES
 Alexander Abelt
 Kettenburg 14
 27374 Visselhövede

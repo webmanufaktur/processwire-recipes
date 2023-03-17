@@ -6,7 +6,7 @@ seo:
 
 ## Information pursuant to Sect. 5 German Telemedia Act (TMG)
 
-STADTRAND
+PROCESSWIRE.RECIPES
 Alexander Abelt
 Kettenburg 14
 27374 Visselhövede
