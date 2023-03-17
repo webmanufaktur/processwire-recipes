@@ -14,7 +14,7 @@ Kettenburg 14
 ## Contact
 
 Phone: +49 4262 / 7901599
-E-mail: processwire.recipes@stadtrand.org
+E-mail: imprint@processwire.recipes
 
 ## VAT ID
 

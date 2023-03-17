@@ -70,7 +70,7 @@ Kettenburg 14
 27374 Visselhövede
 
 Phone: +49 4262 / 7901599
-E-mail: processwire.recipes@stadtrand.org
+E-mail: privacy@processwire.recipes
 
 The controller is the natural person or legal entity that single-handedly or jointly with others makes decisions as to the purposes of and resources for the processing of personal data (e.g., names, e-mail addresses, etc.).
 
