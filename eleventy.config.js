@@ -230,7 +230,7 @@ module.exports = function (eleventyConfig) {
     // );
     // return DateTime.fromJSDate(dateObj).toLocaleString();
     // return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
-    return DateTime.fromJSDate(dateObj).toFormat("dd.MM.yyyy");
+    return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
   eleventyConfig.addFilter("slice", (array, start, end) => {
