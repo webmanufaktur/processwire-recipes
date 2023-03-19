@@ -1,5 +1,0 @@
-{
-  "permalink": "/old-recipes/{{ page.fileSlug }}/index.html",
-  "layout": "recipe.html",
-  "tags": "recipes"
-}
