@@ -4,24 +4,21 @@ seo:
   robots: "noindex, follow"
 ---
 
-## Upcoming
+## ℹ️ 2023-03-18
 
-- ⭐ [Star this repo on Github](https://github.com/processwire-recipes/) **[THAT'S YOUR TASK!]**
-- ☐ **Recipes** -- Merge latest changes back to old/orga repository
-- ☐ **Topics/Tags** -- Overview of all topics/tags
-- ☐ **Credits** -- List of all contributors and authors
-- ☐ **wbmnfktr snippets** -- Merge [wbmnfktr/snippets](https://github.com/webmanufaktur/processwire-snippets)
-- ☐ **www** -- Add 11ty/www setup to orga repository
-- ☐ **Community** -- Open submissions and collect community projects
-- ☐ **[Snippets](https://github.com/webmanufaktur/processwire-recipes/pull/3)** -- Testing, Review, and Release of VS Code Snippets
-- ☐ **Blog** -- You know what this is all about
-- ☐ **Guestposts** -- You know... guestposts in the blog
-- ☐ **Tutorials/HowTo** -- /tutorials /howto /whatever we will see
-- ☐ **Profiles** -- Introductions and details on available ProcessWire starters
-- ☐ **Starters** -- Custom community based starter profiles
-- ❓ **Categories** -- Adding categories to recipes?
-- ❓ **Content ideas** -- What's next?
-- ❗ **Form submissions** -- form-submission platform needed
+- Added:
+  - `date` to all existing recipes based on old Github dates
+  - [Roadmap](/roadmap/) page for upcoming changes
+  - [Stack](/stack/) page
+    - MX Details to **Stack** page for Stack details
+- Removed:
+  - **Upcoming** from changelog
+- Clean up:
+  - `processwire-recipes/Recipes`
+  - Tagged: the `processwire-recipes/Recipes` repository with `v1`
+  - Branch:
+    - new branch for `processwire-recipes/Recipes` repository to `legacy`
+    - updated the `processwire-recipes/Recipes` repository with all updated recipes from `webmanufaktur/processwire-recipes` -- _sure, we lost a few commits here, but the future is bright!_
 
 ---
 
