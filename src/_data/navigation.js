@@ -19,9 +19,17 @@ module.exports = {
   ],
   footer: [
     {
+      label: "Roadmap",
+      url: "/roadmap/",
+    },
+    {
       label: "Changelog",
       url: "/changelog/",
     },
+    // {
+    //   label: "Stack",
+    //   url: "/stack/",
+    // },
     {
       label: "Code of Conduct",
       url: "/code-of-conduct/",
