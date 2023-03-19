@@ -1,0 +1,6 @@
+[submodule "Recipes"]
+	path = Recipes
+	url = git@github.com:processwire-recipes/Recipes.git
+[submodule "src/Recipes"]
+	path = src/Recipes
+	url = git@github.com:processwire-recipes/Recipes.git
