@@ -2,12 +2,13 @@
 title: "Prefill PageTable fields with children on edit"
 version: 1.0.3
 authors:
-    - noelboss
+  - noelboss
 tags:
-    - pages
-    - fields
-    - hook
-    - init
+  - pages
+  - fields
+  - hook
+  - init
+date: 2018-17-18
 ---
 
 ## Problem
@@ -75,4 +76,4 @@ Now whenever there is a page-table field on your page, it gets populated with th
 
 ### Resources
 
--   [See Forum-Post](https://processwire.com/talk/topic/19634-a-hook-to-prefill-pagetable-fields-with-children-on-edit/)
+- [See Forum-Post](https://processwire.com/talk/topic/19634-a-hook-to-prefill-pagetable-fields-with-children-on-edit/)

@@ -2,12 +2,13 @@
 title: "Find latest modified (sub)child of a page"
 version: 1.0.0
 authors:
-    - isellsoap
+  - isellsoap
 tags:
-    - pages
-    - modified
-    - latest
-    - children
+  - pages
+  - modified
+  - latest
+  - children
+date: 2015-01-17
 ---
 
 ## Problem
@@ -24,4 +25,4 @@ $lastModifiedChild = $page->find("id>0,sort=-modified")->first;
 
 ### Resources
 
--   [Tweet](https://twitter.com/isellsoap/status/361471127379378177)
+- [Tweet](https://twitter.com/isellsoap/status/361471127379378177)

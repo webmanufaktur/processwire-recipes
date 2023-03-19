@@ -2,12 +2,13 @@
 title: "Enhance paginator with rel attribute for SEO"
 version: 1.0.0
 authors:
-    - teppo
-    - Philipp
-    - ceberlin
+  - teppo
+  - Philipp
+  - ceberlin
 tags:
-    - seo
-    - pagination
+  - seo
+  - pagination
+date: 2015-03-31
 ---
 
 ## Problem
@@ -51,4 +52,4 @@ foreach($children as $child): ?>
 
 ### Resources
 
--   [Forum thread](https://processwire.com/talk/topic/5145-paginator-and-seo/)
+- [Forum thread](https://processwire.com/talk/topic/5145-paginator-and-seo/)

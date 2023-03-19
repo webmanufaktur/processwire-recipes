@@ -2,13 +2,14 @@
 title: "Extending page save process"
 version: 1.0.1
 authors:
-    - LostKobrakai
+  - LostKobrakai
 tags:
-    - pages
-    - modules
-    - helpers
-    - autoload
-    - hook
+  - pages
+  - modules
+  - helpers
+  - autoload
+  - hook
+date: 2015-02-19
 ---
 
 ## Problem
@@ -77,5 +78,5 @@ class HookAfterPagesSave extends WireData implements Module {
 
 ### Resources
 
--   [Currently latest forum topic](https://processwire.com/talk/topic/8863-new-to-hooks-trying-to-wrap-my-head-around-the-syntax/)
--   [ProcessWire Docs on Hooks](http://processwire.com/api/hooks/)
+- [Currently latest forum topic](https://processwire.com/talk/topic/8863-new-to-hooks-trying-to-wrap-my-head-around-the-syntax/)
+- [ProcessWire Docs on Hooks](http://processwire.com/api/hooks/)

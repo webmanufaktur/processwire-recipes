@@ -7,6 +7,7 @@ tags:
   - fields
   - backend
   - width
+date: 2015-01-17
 ---
 
 ## Problem
@@ -33,4 +34,4 @@ foreach ($prodFields as $k=>$v) {
 
 ### Resources
 
--   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/setColumnWidth.php)
+- [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/setColumnWidth.php)

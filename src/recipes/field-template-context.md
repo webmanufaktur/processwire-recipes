@@ -2,13 +2,14 @@
 title: "Field/template context"
 version: 1.0.0
 authors:
-    - owzim
-    - kongondo
+  - owzim
+  - kongondo
 tags:
-    - api
-    - templates
-    - fields
-    - context
+  - api
+  - templates
+  - fields
+  - context
+date: 2015-01-17
 ---
 
 ## Problem
@@ -35,5 +36,5 @@ $fields->saveFieldgroupContext($f, $t->fieldgroup);
 
 ### Resources
 
--   Forum thread: [Change field description in context via API](https://processwire.com/talk/topic/6656-change-field-description-in-context-via-api/?p=65139)
--   Blog post: [Field/template context now available for any field property](http://processwire.com/blog/posts/processwire-2.5.7-core-updates/#field-template-context-now-available-for-any-field-property)
+- Forum thread: [Change field description in context via API](https://processwire.com/talk/topic/6656-change-field-description-in-context-via-api/?p=65139)
+- Blog post: [Field/template context now available for any field property](http://processwire.com/blog/posts/processwire-2.5.7-core-updates/#field-template-context-now-available-for-any-field-property)

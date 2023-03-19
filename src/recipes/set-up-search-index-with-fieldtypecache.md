@@ -2,11 +2,12 @@
 title: "Set up a really simple search index using FieldtypeCache"
 version: 1.0.1
 authors:
-    - teppo
+  - teppo
 tags:
-    - cache
-    - search
-    - index
+  - cache
+  - search
+  - index
+date: 2016-11-01
 ---
 
 ## Problem
@@ -41,4 +42,4 @@ Please note that if your PHP version is lower than 5.4, FieldtypeCache escapes m
 
 ### Resources
 
--   [ProcessWire Weekly 129](https://weekly.pw/issue/129)
+- [ProcessWire Weekly 129](https://weekly.pw/issue/129)

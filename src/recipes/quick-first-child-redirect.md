@@ -2,12 +2,13 @@
 title: "Quick ProcessWire first child redirect snippet"
 version: 1.0.4
 authors:
-    - marcus
-    - dsdsdsds
+  - marcus
+  - dsdsdsds
 tags:
-    - session
-    - templates
-    - structure
+  - session
+  - templates
+  - structure
+date: 2015-08-11
 ---
 
 ## Problem

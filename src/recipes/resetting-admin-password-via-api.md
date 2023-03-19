@@ -2,16 +2,17 @@
 title: "Resetting admin password via API"
 version: 1.0.5
 authors:
-    - Nico Knoll
-    - owzim
-    - mindplay-dk
-    - LostKobrakai
-    - arjen
+  - Nico Knoll
+  - owzim
+  - mindplay-dk
+  - LostKobrakai
+  - arjen
 tags:
-    - api
-    - users
-    - password
-    - emergency
+  - api
+  - users
+  - password
+  - emergency
+date: 2016-10-10
 ---
 
 ## Problem
@@ -46,6 +47,6 @@ $admin->save('pass');
 
 ### Resources
 
--   [Forum thread](https://processwire.com/talk/topic/7167-server-error-with-latest-dev-build/#entry69041)
--   [Blog post](https://processwire.com/blog/posts/processwire-2.6.9-core-updates-and-new-procache-version/)
--   [API reference](https://processwire.com/api/ref/page/set-and-save/)
+- [Forum thread](https://processwire.com/talk/topic/7167-server-error-with-latest-dev-build/#entry69041)
+- [Blog post](https://processwire.com/blog/posts/processwire-2.6.9-core-updates-and-new-procache-version/)
+- [API reference](https://processwire.com/api/ref/page/set-and-save/)

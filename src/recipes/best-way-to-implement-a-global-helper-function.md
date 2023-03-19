@@ -2,11 +2,12 @@
 title: "Best way to implement a global utility function"
 version: 1.0.0
 authors:
-    - horst
+  - horst
 tags:
-    - config
-    - autoload
-    - helpers
+  - config
+  - autoload
+  - helpers
+date: 2015-01-17
 ---
 
 ## Problem
@@ -29,4 +30,4 @@ This way you can use all what the features/methods this utility files everywhere
 
 ### Resources
 
--   [Forum thread](https://processwire.com/talk/topic/7573-best-way-to-implement-a-global-utility-function/#entry73157)
+- [Forum thread](https://processwire.com/talk/topic/7573-best-way-to-implement-a-global-utility-function/#entry73157)

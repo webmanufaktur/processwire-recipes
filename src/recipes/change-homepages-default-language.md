@@ -2,13 +2,14 @@
 title: "Change homepage's default language"
 version: 1.0.1
 authors:
-    - bcartier
-    - ESRCH
+  - bcartier
+  - ESRCH
 tags:
-    - multilanguage
-    - homepage
-    - modules
-    - hook
+  - multilanguage
+  - homepage
+  - modules
+  - hook
+date: 2015-03-31
 ---
 
 ## Problem
@@ -19,9 +20,9 @@ You have a multi-language site, and started with for example English as primary,
 
 Here is what you can do to redirect the home page '/' to the French home page:
 
--   Set page names for both languages for the home page ('en' for English, 'fr' for French)
--   In the LanguageSupportPageNames settings, choose the option "No - Root URL performs a redirect to: /name/". When you go to the root url '/' it will redirect you to '/en/'
--   Finally, **create a module** to hook into Session::redirect to force the redirection of the root url to the French translation as follows:
+- Set page names for both languages for the home page ('en' for English, 'fr' for French)
+- In the LanguageSupportPageNames settings, choose the option "No - Root URL performs a redirect to: /name/". When you go to the root url '/' it will redirect you to '/en/'
+- Finally, **create a module** to hook into Session::redirect to force the redirection of the root url to the French translation as follows:
 
 ```php
 <?php
@@ -72,4 +73,4 @@ Here is what you can do to redirect the home page '/' to the French home page:
 
 ### Resources
 
--   [bcartiers's forum post](https://processwire.com/talk/topic/9322-change-default-language-for-homepage/#entry89925)
+- [bcartiers's forum post](https://processwire.com/talk/topic/9322-change-default-language-for-homepage/#entry89925)

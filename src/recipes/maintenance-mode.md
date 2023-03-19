@@ -2,11 +2,12 @@
 title: "Maintenance Mode"
 version: 1.0.3
 authors:
-    - owzim
+  - owzim
 tags:
-    - admin
-    - maintenance
-    - session
+  - admin
+  - maintenance
+  - session
+date: 2015-01-17
 ---
 
 ## Problem

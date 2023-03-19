@@ -2,11 +2,12 @@
 title: "Converting thumbnail images for PW3 admin"
 version: 1.0.1
 authors:
-    - ryan
+  - ryan
 tags:
-    - processwire3
-    - admin
-    - thumbnails
+  - processwire3
+  - admin
+  - thumbnails
+date: 2016-11-02
 ---
 
 ## Problem
@@ -27,4 +28,4 @@ The "202" part actually can be any number, so long as it's not the previous defa
 
 ### Resources
 
--   [Ryan's post on processwire.com](https://processwire.com/blog/posts/processwire-3.0.39-core-updates/)
+- [Ryan's post on processwire.com](https://processwire.com/blog/posts/processwire-3.0.39-core-updates/)

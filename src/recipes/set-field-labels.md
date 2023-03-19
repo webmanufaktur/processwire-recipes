@@ -7,6 +7,7 @@ tags:
   - pages
   - multilanguage
   - labels
+date: 2015-01-17
 ---
 
 ## Problem
@@ -40,5 +41,5 @@ $field->save();
 
 ### Resources
 
--   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/setFieldLabels.php)
--   [ProcessWire API documentation and getting and setting](http://processwire.com/api/multi-language-support/multi-language-fields/#getting-and-setting)
+- [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/setFieldLabels.php)
+- [ProcessWire API documentation and getting and setting](http://processwire.com/api/multi-language-support/multi-language-fields/#getting-and-setting)

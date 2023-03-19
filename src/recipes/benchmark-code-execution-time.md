@@ -2,11 +2,12 @@
 title: "Benchmark code execution time"
 version: 1.0.0
 authors:
-    - ryan
+  - ryan
 tags:
-    - debug
-    - time
-    - performance
+  - debug
+  - time
+  - performance
+date: 2015-01-17
 ---
 
 ## Problem
@@ -25,5 +26,5 @@ echo Debug::timer($t);
 
 ### Resources
 
--   [Tweet](https://twitter.com/processwire/status/452439920653893633)
--   [Usage examples in forum thread](https://processwire.com/talk/topic/6328-optimizing-code-queries/)
+- [Tweet](https://twitter.com/processwire/status/452439920653893633)
+- [Usage examples in forum thread](https://processwire.com/talk/topic/6328-optimizing-code-queries/)

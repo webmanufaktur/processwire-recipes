@@ -1,11 +1,12 @@
 ---
 title: "Improve accessibility of a read more link version: 1.0.0"
 authors:
-    - marcus
+  - marcus
 tags:
-    - a11y
-    - accessibility
-    - templates
+  - a11y
+  - accessibility
+  - templates
+date: 2016-02-14
 ---
 
 ## Problem
@@ -48,14 +49,14 @@ Also add to your CSS:
 
 ```css
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip-path: rect(0, 0, 0, 0);
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  border: 0;
 }
 ```
 
@@ -63,5 +64,5 @@ Also add to your CSS:
 
 ### Resources
 
--   [Blog post on this topic](https://bigger-on-the-inside.net/articles/better-accessibility-with-processwire-read-more-links/)
--   [W3C's Accessibility Guidelines on links and content](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
+- [Blog post on this topic](https://bigger-on-the-inside.net/articles/better-accessibility-with-processwire-read-more-links/)
+- [W3C's Accessibility Guidelines on links and content](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)

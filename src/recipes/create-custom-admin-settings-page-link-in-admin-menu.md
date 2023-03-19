@@ -2,11 +2,12 @@
 title: "Create custom admin settings page link in admin menu"
 version: 1.0.0
 authors:
-    - jlahijani
+  - jlahijani
 tags:
-    - page
-    - settings
-    - admin
+  - page
+  - settings
+  - admin
+date: 2015-08-30
 ---
 
 ## Problem
@@ -36,4 +37,4 @@ Now go to the Settings page in the navbar. Nice, easy and "official" feeling.
 
 ### Resources
 
--   [How to create a custom admin settings page](https://processwire.com/talk/topic/6388-how-to-create-a-custom-admin-settings-page/?p=99829)
+- [How to create a custom admin settings page](https://processwire.com/talk/topic/6388-how-to-create-a-custom-admin-settings-page/?p=99829)

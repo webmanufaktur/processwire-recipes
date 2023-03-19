@@ -6,6 +6,7 @@ authors:
 tags:
   - page
   - creation
+date: 2015-01-17
 ---
 
 ## Problem
@@ -30,4 +31,4 @@ echo "page ID {$p->id} created!<br>";
 
 ### Resources
 
--   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/createPage.php)
+- [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/createPage.php)

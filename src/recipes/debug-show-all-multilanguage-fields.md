@@ -7,6 +7,7 @@ tags:
   - pages
   - multilanguage
   - fields
+date: 2015-01-17
 ---
 
 ## Problem
@@ -53,4 +54,4 @@ echo "</table>";
 
 ### Resources
 
--   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/showAllMultilangFields.php)
+- [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/showAllMultilangFields.php)

@@ -2,12 +2,13 @@
 title: "Create breadcrumb of page titles for html title tag"
 version: 1.0.0
 authors:
-    - Tom Arnold
+  - Tom Arnold
 tags:
-    - title
-    - page title
-    - tag
-    - html
+  - title
+  - page title
+  - tag
+  - html
+date: 2016-02-13
 ---
 
 ## Problem

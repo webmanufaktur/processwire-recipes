@@ -6,6 +6,7 @@ authors:
 tags:
   - pages
   - multilanguage
+date: 2015-01-17
 ---
 
 ## Problem

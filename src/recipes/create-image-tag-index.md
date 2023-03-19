@@ -2,11 +2,12 @@
 title: "Create an index/linklist of all used image tags"
 version: 1.0.0
 authors:
-    - soma
+  - soma
 tags:
-    - images
-    - tags
-    - index
+  - images
+  - tags
+  - index
+date: 2015-01-17
 ---
 
 ## Problem
@@ -107,4 +108,4 @@ if($input->urlSegment1 || $input->get->tag){
 
 ### Resources
 
--   [Soma's original Gist on GitHub](https://gist.github.com/somatonic/5808897)
+- [Soma's original Gist on GitHub](https://gist.github.com/somatonic/5808897)

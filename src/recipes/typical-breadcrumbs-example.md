@@ -8,6 +8,7 @@ tags:
   - pages
   - parent
   - templates
+date: 2018-12-24
 ---
 
 ## Problem

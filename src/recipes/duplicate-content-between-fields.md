@@ -2,11 +2,12 @@
 title: "Duplicate content from one field to another"
 version: 1.0.3
 authors:
-    - adrian
+  - adrian
 tags:
-    - fields
-    - content
-    - copy
+  - fields
+  - content
+  - copy
+date: 2015-01-17
 ---
 
 ## Problem

@@ -2,11 +2,12 @@
 title: "Enhance image links on your site with FancyBox"
 version: 1.0.1
 authors:
-    - Martijn Geerts
+  - Martijn Geerts
 tags:
-    - modal
-    - javascript
-    - fancybox
+  - modal
+  - javascript
+  - fancybox
+date: 2015-01-17
 ---
 
 ## Problem
@@ -19,10 +20,10 @@ Find all links to image files (jpg, png, gif) that originate in the particular P
 
 ```js
 $("[href^='/site/assets/files/']")
-    .filter(function () {
-        return this.href.match(/.*[jpg|png|gif]$/i);
-    })
-    .addClass("to-fancy");
+  .filter(function () {
+    return this.href.match(/.*[jpg|png|gif]$/i);
+  })
+  .addClass("to-fancy");
 ```
 
 Init fancybox on this selection. You can supply an options object.
@@ -35,4 +36,4 @@ $(".to-fancy").fancybox();
 
 ### Resources
 
--   [Forum thread](https://processwire.com/talk/topic/5578-how-to-use-fancybox/?p=73141)
+- [Forum thread](https://processwire.com/talk/topic/5578-how-to-use-fancybox/?p=73141)

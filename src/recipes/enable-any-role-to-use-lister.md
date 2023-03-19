@@ -2,10 +2,11 @@
 title: "Enable any Role to use Lister (pages/find)"
 version: 1.0.0
 authors:
-    - rajo
+  - rajo
 tags:
-    - admin
-    - users
+  - admin
+  - users
+date: 2015-01-17
 ---
 
 ## Problem

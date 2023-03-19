@@ -9,6 +9,7 @@ tags:
   - pages
   - random
   - shuffle
+date: 2016-10-30
 ---
 
 ## Problem
@@ -39,4 +40,4 @@ if($quote->id) {
 
 ### Resources
 
--   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/randomQuote.inc)
+- [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/randomQuote.inc)

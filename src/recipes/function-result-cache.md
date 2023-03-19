@@ -2,10 +2,11 @@
 title: "Cache the result of a function"
 version: 1.0.0
 authors:
-    - owzim
+  - owzim
 tags:
-    - cache
-    - performance
+  - cache
+  - performance
+date: 2016-11-16
 ---
 
 ## Problem

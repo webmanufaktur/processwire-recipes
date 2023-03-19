@@ -2,12 +2,13 @@
 title: "Logging all outgoing e-mails"
 version: 1.0.0
 authors:
-    - ryan
+  - ryan
 tags:
-    - email
-    - log
-    - hook
-    - ready
+  - email
+  - log
+  - hook
+  - ready
+date: 2016-10-30
 ---
 
 ## Problem
@@ -51,4 +52,4 @@ SENT (1 of 1), SUBJECT (Hello world), TO (test@processwire.com), FROM (ryan@test
 
 ### Resources
 
--   [Ryan's post on processwire.com](https://processwire.com/blog/posts/processwire-3.0.38-core-updates/#recipe-logging-all-outgoing-emails)
+- [Ryan's post on processwire.com](https://processwire.com/blog/posts/processwire-3.0.38-core-updates/#recipe-logging-all-outgoing-emails)

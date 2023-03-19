@@ -8,6 +8,7 @@ tags:
   - multilanguage
   - xml-sitemap
   - seo
+date: 2017-06-02
 ---
 
 ## Problem
@@ -101,4 +102,4 @@ echo $sitemapCollection;
 
 ### Resources
 
--   [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/xmlSitemapMultilang.php)
+- [Dragan's ProcessWire code snippets](https://github.com/dragan1700/pw/blob/master/xmlSitemapMultilang.php)

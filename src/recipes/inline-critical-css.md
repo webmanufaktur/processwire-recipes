@@ -2,12 +2,13 @@
 title: "Inline critical above the fold css"
 version: 1.1.1
 authors:
-    - felixwahner
-    - neuwaerts
+  - felixwahner
+  - neuwaerts
 tags:
-    - css
-    - performance
-    - fold
+  - css
+  - performance
+  - fold
+date: 2015-03-15
 ---
 
 ## Problem
@@ -20,10 +21,10 @@ _This solution depends on several tools that make the "build" process a lot easi
 
 ## Tools used:
 
--   [NodeJS](https://nodejs.org/)
--   [Grunt](https://gruntjs.com/)
--   [Grunt Critical-CSS](https://github.com/filamentgroup/grunt-criticalcss)
--   [Grunt-Contrib-Copy](https://github.com/gruntjs/grunt-contrib-copy)
+- [NodeJS](https://nodejs.org/)
+- [Grunt](https://gruntjs.com/)
+- [Grunt Critical-CSS](https://github.com/filamentgroup/grunt-criticalcss)
+- [Grunt-Contrib-Copy](https://github.com/gruntjs/grunt-contrib-copy)
 
 ## Directory structure
 
@@ -77,53 +78,53 @@ Copy and paste the following Code to the `Gruntfile.js` inside your projects dir
 
 ```js
 module.exports = function (grunt) {
-    grunt.initConfig({
-        paths: {
-            src: "src/",
-            srcAssets: "<%= paths.src %>assets/",
-            srcStyles: "<%= paths.srcAssets %>styles/",
-            tmpl: "htdocs/site/templates/",
-            assets: "<%= paths.tmpl %>assets/",
-            styles: "<%= paths.assets %>styles/",
-        },
+  grunt.initConfig({
+    paths: {
+      src: "src/",
+      srcAssets: "<%= paths.src %>assets/",
+      srcStyles: "<%= paths.srcAssets %>styles/",
+      tmpl: "htdocs/site/templates/",
+      assets: "<%= paths.tmpl %>assets/",
+      styles: "<%= paths.assets %>styles/",
+    },
 
-        criticalcss: {
-            custom: {
-                options: {
-                    url: "http://localhost/mycoolproject/htdocs/",
-                    ignoreConsole: true,
-                    forceInclude: [".classes-that-need-to-be-included"],
-                    width: 1200,
-                    height: 900,
-                    outputfile: "<%= paths.styles %>critical.css",
-                    filename: "<%= paths.styles %>main.css",
-                    buffer: 900 * 1200,
-                },
-            },
+    criticalcss: {
+      custom: {
+        options: {
+          url: "http://localhost/mycoolproject/htdocs/",
+          ignoreConsole: true,
+          forceInclude: [".classes-that-need-to-be-included"],
+          width: 1200,
+          height: 900,
+          outputfile: "<%= paths.styles %>critical.css",
+          filename: "<%= paths.styles %>main.css",
+          buffer: 900 * 1200,
         },
+      },
+    },
 
-        copy: {
-            assets: {
-                expand: true,
-                cwd: "<%= paths.srcStyles %>",
-                src: "*.{css}",
-                dest: "<%= paths.styles %>",
-            },
-        },
-    });
+    copy: {
+      assets: {
+        expand: true,
+        cwd: "<%= paths.srcStyles %>",
+        src: "*.{css}",
+        dest: "<%= paths.styles %>",
+      },
+    },
+  });
 
-    grunt.loadNpmTasks("grunt-contrib-sass");
-    grunt.registerTask("default", ["criticalcss", "copy:assets"]);
+  grunt.loadNpmTasks("grunt-contrib-sass");
+  grunt.registerTask("default", ["criticalcss", "copy:assets"]);
 };
 ```
 
 This configuration assumes there is a `main.css` located in `src/assets/styles/` and your website runs under `http://localhost/mycoolproject/htdocs/`. The URL is crucial as there will be some "headless browser magic" done if you start the critical-css task. To explain this further here is what happens if you start the Grunt task with the command you'll find later on:
 
--   A webkit based browser that runs without a graphical user interface ([PhantomJS](http://phantomjs.org/)) is started
--   The browser renders the given url and checks which styles are displayed within the configuration dimensions rectangle (1200x900px in this case)
--   A list of styling rules to be applied is beeing generated
--   The rules are extracted from your `main.css` and inserted into a (newly created) `critical.css`
--   Both files are copied into your `htdocs/site/templates/assets/styles` folder (you can also remove this when you don't need it and do all of this stuff within your "normal" assets folder).
+- A webkit based browser that runs without a graphical user interface ([PhantomJS](http://phantomjs.org/)) is started
+- The browser renders the given url and checks which styles are displayed within the configuration dimensions rectangle (1200x900px in this case)
+- A list of styling rules to be applied is beeing generated
+- The rules are extracted from your `main.css` and inserted into a (newly created) `critical.css`
+- Both files are copied into your `htdocs/site/templates/assets/styles` folder (you can also remove this when you don't need it and do all of this stuff within your "normal" assets folder).
 
 ## Preparing the template
 
@@ -184,6 +185,6 @@ At this point you have to manually edit the `$cssupdate` string everytime you're
 
 ### Resources
 
--   [Original post by adactio](https://adactio.com/journal/8504)
--   [Forum thread](https://processwire.com/talk/topic/4710-frontend-performance-tips/?p=90612)
--   [PageSpeed: Inline critical / above the fold CSS](https://developers.google.com/speed/pagespeed/service/PrioritizeCriticalCss)
+- [Original post by adactio](https://adactio.com/journal/8504)
+- [Forum thread](https://processwire.com/talk/topic/4710-frontend-performance-tips/?p=90612)
+- [PageSpeed: Inline critical / above the fold CSS](https://developers.google.com/speed/pagespeed/service/PrioritizeCriticalCss)

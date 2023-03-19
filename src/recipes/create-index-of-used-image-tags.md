@@ -2,11 +2,12 @@
 title: "Create an index / linklist of all used image tags"
 version: 1.0.0
 authors:
-    - soma
-    - teppo
+  - soma
+  - teppo
 tags:
-    - images
-    - index
+  - images
+  - index
+date: 2016-10-30
 ---
 
 ## Problem
@@ -104,5 +105,5 @@ if($input->urlSegment1 || $input->get->tag){
 
 ### Resources
 
--   [ProcessWire Weekly 124](https://weekly.pw/issue/124/)
--   [Soma'original recipe](https://gist.github.com/somatonic/5808897)
+- [ProcessWire Weekly 124](https://weekly.pw/issue/124/)
+- [Soma'original recipe](https://gist.github.com/somatonic/5808897)
