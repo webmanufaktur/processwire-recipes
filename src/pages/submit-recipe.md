@@ -54,11 +54,10 @@ dependencies:
 
 ## Clone the repo
 
-For now as of writing this the _official_ repository is **still** over on Github: https://github.com/webmanufaktur/processwire-recipes/tree/master/src/recipes
+You can find the **official repository on Github**:
+https://github.com/processwire-recipes/Recipes/tree/master/src/recipes
 
-There will be an update in the near future. You will get notified on this.
-
-In addition to this you will find a link the explicit file below each recipe.
+Follow the instructions provided by Github and clone the **Recipe** Repository to commit changes and make pull requests.
 
 ### Submit Pull Request
 
