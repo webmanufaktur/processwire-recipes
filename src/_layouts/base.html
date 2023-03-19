@@ -9,9 +9,10 @@ layout: _main.html
 <main>{{ content | safe }}</main>
 
 <!-- FOOTER -->
-{% include "renderedTagCloud.html" %}
 <!-- tags -->
 {% if page.url == "/" %}
+<!-- Tag Cloud -->
+{% include "renderedTagCloud.html" %}
 <!-- authors -->
 {% include "authors.html" %}
 <!-- /authors -->
