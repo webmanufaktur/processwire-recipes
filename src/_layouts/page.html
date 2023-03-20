@@ -3,15 +3,19 @@ layout: base.html
 ---
 
 <!-- import macro -->
-{% from "macros.html" import button, hero %}
+{% from "macros.html" import button, hero, cta, ctaContent %}
 <!-- for -->
 <article class="">
   {{ hero(title) }}
   <div class="pw-gradient">
     <div
-      class="bg-white border-2 border-stone-100 rounded shadow-xl p-8 prose mx-auto prose-a:text-pwblue prose-a:font-semibold"
+      class="bg-white border-2 max-w-2xl border-stone-100 rounded shadow-xl p-8 mx-auto"
     >
-      <div class="">{{ content | safe }}</div>
+      <div class="prose prose-a:text-pwblue prose-a:font-semibold">
+        {{ content | safe }}
+      </div>
+
+      <div>{{ ctaContent(page.fileSlug) }}</div>
     </div>
   </div>
 </article>
