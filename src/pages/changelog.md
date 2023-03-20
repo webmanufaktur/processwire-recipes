@@ -9,8 +9,7 @@ seo:
 - Added:
   - `date` to all existing recipes based on old Github dates
   - [Roadmap](/roadmap/) page for upcoming changes
-  - [Stack](/stack/) page
-    - MX Details to **Stack** page for Stack details
+  - [Uses](/uses/) page
 - Removed:
   - **Upcoming** from changelog
 - Clean up:
