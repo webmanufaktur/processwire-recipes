@@ -1,10 +1,25 @@
 <ul class="space-y-8 md:space-y-12 max-w-5xl table mx-auto px-4">
-  {% for recipe in collections.recipes | sortByTitle %}
-  <li class="border-2 border-stone-100 bg-white shadow-xl p-6 md:p-8 rounded">
-    <a href="{{ recipe.url }}" class="text-lg">{{ recipe.data.title }}</a>
-    <div class="mt-2 md:mt-4 flex gap-1 md:gap-2 flex-wrap">
-      {% for tag in recipe.data.tags %} {% if tag != "recipes" %} {% include
-      "_partials/tag.html" %} {% endif %} {% endfor %}
+  {% for recipe in collections.recipes | sortNewOld %}
+  <li class="sticky top-8">
+    <div class="border-2 border-gray-100 bg-white p-6 md:p-8 rounded">
+      <a href="{{ recipe.url }}" class="text-lg block">
+        <span class="font-bold"> {{ recipe.data.title }} </span></a
+      >
+      <ul class="text-gray-500 text-sm tabular-nums leading-normal">
+        <li>
+          Added/Updated:
+          <span class="font-semibold">{{ recipe.data.date | postDate }}</span>
+        </li>
+        <li>
+          Authors:
+          <span class="font-semibold">{{ recipe.data.authors }}</span>
+        </li>
+      </ul>
+
+      <div class="mt-2 md:mt-4 flex gap-1 md:gap-2 flex-wrap">
+        {% for tag in recipe.data.tags %} {% if tag != "recipes" %} {% include
+        "_partials/tag.html" %} {% endif %} {% endfor %}
+      </div>
     </div>
   </li>
   {% endfor %}

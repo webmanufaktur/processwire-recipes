@@ -9,9 +9,11 @@ layout: base.html
   {{ hero(title) }}
   <div class="pw-gradient">
     <div
-      class="bg-white border-2 max-w-2xl border-stone-100 rounded shadow-xl p-8 mx-auto"
+      class="bg-white border-2 max-w-2xl border-gray-100 rounded shadow-xl p-8 mx-auto"
     >
-      <div class="prose prose-a:text-pwblue prose-a:font-semibold">
+      <div
+        class="prose prose-a:text-gray-800 prose-a:decoration-pwblue prose-a:underline-offset-4 hover:prose-a:decoration-pink-500 prose-a:font-semibold"
+      >
         {{ content | safe }}
       </div>
 
