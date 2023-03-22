@@ -301,7 +301,7 @@ module.exports = function (eleventyConfig) {
     for (let item of collection) {
       (item.data.categories || []).forEach((item) => collectionSet.add(item));
     }
-    return Array.from(collectionSet);
+    return Array.from(collectionSet).sort();
   });
 
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
