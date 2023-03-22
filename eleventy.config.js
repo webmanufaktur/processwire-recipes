@@ -78,8 +78,8 @@ async function imageShortcodeRelative(src, alt, cls, wdth = "null") {
   let metadata = await Image(file, {
     widths: wdth,
     formats: ["webp"],
-    urlPath: "/assets/media/", // used in frontend
-    outputDir: "_site/assets/media/", // used in dev
+    urlPath: "/media/", // used in frontend
+    outputDir: "_site/media/", // used in dev
     // filenameFormat: function (id, src, width, format) {
     //     const extension = path.extname(src);
     //     const name = path.basename(src, extension);
@@ -105,8 +105,8 @@ async function imageShortcode(src, alt, cls, wdth = "null") {
   let metadata = await Image(src, {
     widths: wdth,
     formats: ["jpg", "webp"],
-    urlPath: "/assets/media/", // used in frontend
-    outputDir: "_site/assets/media/", // used in dev
+    urlPath: "/media/", // used in frontend
+    outputDir: "_site/media/", // used in dev
     // filenameFormat: function (id, src, width, format) {
     //   const extension = path.extname(src);
     //   const name = path.basename(src, extension);
@@ -139,6 +139,7 @@ module.exports = function (eleventyConfig) {
 
   // Set directories to pass through to the _site folder
   eleventyConfig.addPassthroughCopy("src/assets/fonts/");
+  eleventyConfig.addPassthroughCopy("src/assets/images/");
   eleventyConfig.addPassthroughCopy("src/google10e1d7d7dc049d58.html");
 
   // Inline SVGs
@@ -185,23 +186,23 @@ module.exports = function (eleventyConfig) {
 
   // ogimage2
 
-  eleventyConfig.addPlugin(EleventyPluginOgImage, {
-    satoriOptions: {
-      fonts: [
-        {
-          name: "Montserrat",
-          data: fs.readFileSync(
-            "./src/assets/fonts/montserrat/montserrat-v25-latin-regular.woff"
-          ),
-          weight: 400,
-          style: "normal",
-        },
-      ],
-    },
-    hashLength: 16,
-    outputDir: "_site/assets/media/",
-    urlPath: "/assets/media/",
-  });
+  // eleventyConfig.addPlugin(EleventyPluginOgImage, {
+  //   satoriOptions: {
+  //     fonts: [
+  //       {
+  //         name: "Montserrat",
+  //         data: fs.readFileSync(
+  //           "./src/assets/fonts/montserrat/montserrat-v25-latin-regular.woff"
+  //         ),
+  //         weight: 400,
+  //         style: "normal",
+  //       },
+  //     ],
+  //   },
+  //   hashLength: 16,
+  //   outputDir: "_site/assets/media/",
+  //   urlPath: "/assets/media/",
+  // });
 
   // rating
   eleventyConfig.addFilter("rating", function (rating) {
