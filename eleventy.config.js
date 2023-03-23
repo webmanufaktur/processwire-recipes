@@ -145,7 +145,7 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPlugin(svgContents);
 
   // Favicon generator
-  // eleventyConfig.addPlugin(faviconPlugin);
+  eleventyConfig.addPlugin(faviconPlugin);
 
   // TOC
   eleventyConfig.addPlugin(pluginTOC, {
