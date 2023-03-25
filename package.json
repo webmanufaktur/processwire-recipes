@@ -12,8 +12,10 @@
     "build:eleventy": "npx @11ty/eleventy",
     "watch:alpine": "npx esbuild ./src/assets/js/alpine.js --bundle --target=es2018  --watch --outfile=./_site/assets/js/alpine.dist.js",
     "build:alpine": "npx esbuild ./src/assets/js/alpine.js --bundle --target=es2018 --minify --outfile=./_site/assets/js/alpine.dist.js",
-    "watch:js": "npx esbuild ./src/assets/js/app.js --minify --outfile=./_site/assets/js/app.dist.js",
+    "watch:js": "npx esbuild ./src/assets/js/app.js --watch --outfile=./_site/assets/js/app.dist.js",
     "build:js": "npx esbuild ./src/assets/js/app.js --minify --outfile=./_site/assets/js/app.dist.js",
+    "watch:jssearch": "npx esbuild ./src/assets/js/search.js --watch --minify --outfile=./_site/assets/js/search.dist.js",
+    "build:jssearch": "npx esbuild ./src/assets/js/search.js --minify --outfile=./_site/assets/js/search.dist.js",
     "start": "npm-run-all --parallel watch:*",
     "build": "npm-run-all build:*"
   },

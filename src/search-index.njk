@@ -1,0 +1,16 @@
+---
+permalink: "/search.json"
+---
+[
+  {%- for recipe in collections.recipes | reverse %}
+    {%- set url %}{{ recipe.url | url }}{% endset -%}
+    {
+      "url": "{{ url }}",
+      "title": "{{ recipe.data.title }}",
+      "tags": "{{ recipe.data.tags }}"
+    }
+    {%- if not loop.last -%}
+    ,
+    {%- endif -%}
+  {%- endfor %}
+]

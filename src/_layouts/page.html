@@ -17,7 +17,9 @@ layout: base.html
         {{ content | safe }}
       </div>
 
+      {% if showCta %}
       <div>{{ ctaContent(page.fileSlug) }}</div>
+      {% endif %}
     </div>
   </div>
 </article>
