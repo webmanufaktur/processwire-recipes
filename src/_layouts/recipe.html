@@ -56,14 +56,33 @@ layout: base.html
             {% endif %}
 
             <!-- Date -->
+            {% if added %}
             <div>
               <span class="block text-xs font-medium uppercase tracking-widest"
-                >Added/Updated:</span
+                >Updated:</span
               >
               <span class="text-sm tracking-widest font-semibold tabular-nums"
                 >{{ date | postDate }}</span
               >
             </div>
+            <div>
+              <span class="block text-xs font-medium uppercase tracking-widest"
+                >Added:</span
+              >
+              <span class="text-sm tracking-widest font-semibold tabular-nums"
+                >{{ added | postDate }}</span
+              >
+            </div>
+            {% else %}
+            <div>
+              <span class="block text-xs font-medium uppercase tracking-widest"
+                >Added:</span
+              >
+              <span class="text-sm tracking-widest font-semibold tabular-nums"
+                >{{ date | postDate }}</span
+              >
+            </div>
+            {% endif %}
 
             <!-- ProcessWire -->
             {% if processwire %}
@@ -120,6 +139,9 @@ layout: base.html
               </div>
             </div>
             {% endif %}
+
+            <!-- prev/next  -->
+            {% include "prevnext.html" %}
           </div>
         </div>
       </div>
