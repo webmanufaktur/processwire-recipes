@@ -66,6 +66,12 @@
     <!-- Favicon -->
     {% favicon 'src/assets/images/favicon.png' %}
     <!-- JS -->
+    
+    
+    <link rel="preload" href="/assets/js/alpine.dist.js" as="script" />
+    <link rel="preload" href="/assets/js/app.dist.js" as="script" />
+    <link rel="preload" href="/assets/js/search.dist.js" as="script" />
+
     <script src="/assets/js/search.dist.js" defer></script>
     <script>
       if (localStorage.getItem("color-theme") === "dark") {
@@ -74,8 +80,16 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <script
+      defer
+      src="/assets/js/app.dist.js?cache={{ config.timestamp }}"
+    ></script>
+    <script
+      defer
+      src="/assets/js/alpine.dist.js?cache={{ config.timestamp }}"
+    ></script>
   </head>
-  <body class="text-gray-900">
+  <body x-data class="text-gray-900">
     {{ content | safe }}
   </body>
 </html>
