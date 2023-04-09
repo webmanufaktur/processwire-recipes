@@ -12,5 +12,5 @@ eleventyExcludeFromCollections: true
 
 
 {%- for recipe in collections.recipes %}
-/{{ recipe.data.title | slugify }}/ /recipes/{{ recipe.data.title | slugify }}/ 301
+/{{ recipe.fileSlug | slugify }}/ /recipes/{{ recipe.fileSlug | slugify }}/ 301
 {%- endfor %}
