@@ -1,5 +1,5 @@
 <ul class="space-y-8 md:space-y-12 max-w-2xl w-full mx-auto px-4">
-  {% for recipe in collections.recipes | sortNewOld %}
+  {% for recipe in collections.recipes | sortNewOld | slice(0,4) %}
   <li>
     <div class="border-2 border-gray-100 bg-white p-6 md:p-8 rounded">
       <a href="{{ recipe.url }}" class="text-lg block">

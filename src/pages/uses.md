@@ -1,7 +1,8 @@
 ---
 title: "This site uses"
-seo:
-  robots: "noindex, follow"
+seorobots: "noindex, follow"
+draft: true
+eleventyExcludeFromCollections: true
 ---
 
 As some asked me about what I use here for this site, a brief overview of what's running all of this right now.

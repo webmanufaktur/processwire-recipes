@@ -11,6 +11,11 @@ const markdownItImageFigures = require("markdown-it-image-figures");
 const mila = require("markdown-it-link-attributes");
 const markdownItAnchor = require("markdown-it-anchor");
 
+// Autolinks
+const crosslinker = require("markdown-it-auto-crosslinker");
+const dictionaryData = fs.readFileSync("src/_data/keywords.json");
+const dictionary = JSON.parse(dictionaryData);
+
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 const pluginTOC = require("eleventy-plugin-toc");
@@ -34,6 +39,10 @@ markdown.use(markdownItImageFigures, {
   async: true,
   classes: "lazy",
   figcaption: true,
+});
+markdown.use(crosslinker, {
+  dictionary,
+  wholeWords: true,
 });
 markdown.use(markdownItAnchor);
 markdown.use(mila, [
@@ -132,7 +141,8 @@ async function imageShortcode(src, alt, cls, wdth = "null") {
 
 // module exports
 module.exports = function (eleventyConfig) {
-  // custom collection
+  // custom collections
+  // featured posts. pages, recipes
   eleventyConfig.addCollection("featured", function (collection) {
     return collection.getAll().filter((item) => item.data.featured);
   });
@@ -146,13 +156,13 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPlugin(svgContents);
 
   // Favicon generator
-  // eleventyConfig.addPlugin(faviconPlugin);
+  eleventyConfig.addPlugin(faviconPlugin);
 
   // TOC
   eleventyConfig.addPlugin(pluginTOC, {
     tags: ["h2", "h3"], // which heading tags are selected headings must each have an ID attribute
     wrapper: "div", // element to put around the root `ol`/`ul`
-    wrapperClass: "toc prose", // class for the element around the root `ol`/`ul`
+    wrapperClass: "toc", // class for the element around the root `ol`/`ul`
     ul: true, // if to use `ul` instead of `ol`
     flat: false, // if subheadings should appear as child of parent or as a sibling
   });
@@ -216,9 +226,32 @@ module.exports = function (eleventyConfig) {
     return output;
   });
   //excerpt
-  eleventyConfig.addFilter("excerpt", (post) => {
-    const content = post.replace(/(<([^>]+)>)/gi, "");
+  eleventyConfig.addFilter("excerpt", (tc) => {
+    const content = tc.replace(/(<([^>]+)>)/gi, "");
+    // const content = tc.replace(/(<([^>]+)>-)/gi, "");
     return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+  });
+
+  //striptags
+  eleventyConfig.addFilter("striptags", (post) => {
+    return (content = post.replace(/(<([^>]+)>)/gi, ""));
+    // return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+  });
+
+  // Define a filter to make a string uppercase
+  eleventyConfig.addFilter("uppercase", function (value) {
+    if (value && typeof value === "string") {
+      return value.toUpperCase();
+    }
+    return value;
+  });
+
+  // Define a filter to capitalize the first letter of a string
+  eleventyConfig.addFilter("capitalize", function (value) {
+    if (value && typeof value === "string") {
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    }
+    return value;
   });
 
   // FILTERS

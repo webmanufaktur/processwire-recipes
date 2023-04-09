@@ -1,0 +1,14 @@
+{% if toc %}
+<details class="block bg-stone-100 rounded-lg mb-8">
+  <summary
+    class="cursor-pointer font-bold p-4 bg-pwpink text-white rounded-lg mb-4"
+  >
+    Table of contents
+  </summary>
+  <div
+    class="[&>*>ul>li>ul]:pl-4 [&>*>ul>li>ul]:my-2 [&>*>ul>li]:py-1 [&>*>ul>li>ul>li]:py-1 p-4 pt-0 pl-8 [&>*>a]:text-red-500"
+  >
+    {{ content | toc | safe }}
+  </div>
+</details>
+{% endif %}

@@ -1,0 +1,34 @@
+<section>
+  <!-- define link -->
+  {% set previousPost = collections.recipes | getPreviousCollectionItem %}
+  <!-- define link -->
+  {% set nextPost = collections.recipes | getNextCollectionItem %}
+  <div class="space-y-8">
+    {% if previousPost %}
+
+    <div>
+      <a
+        class="font-bold mt-1 block group hover:underline"
+        href="{{ previousPost.url }}"
+      >
+        <span class="block text-xs uppercase font-normal tracking-wider">
+          Previous Recipe:
+        </span>
+        <span class="">{{ previousPost.data.title }} </span>
+      </a>
+    </div>
+    {% endif %} {% if nextPost %}
+    <div>
+      <a
+        class="font-bold mt-1 block group hover:underline"
+        href="{{ nextPost.url }}"
+      >
+        <span class="block text-xs uppercase font-normal tracking-wider">
+          Next Recipe:
+        </span>
+        <span class="">{{ nextPost.data.title }} </span>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>

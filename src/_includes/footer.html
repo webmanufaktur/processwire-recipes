@@ -1,7 +1,36 @@
 <footer class="mt-6 px-6 md:px-12 md:py-12 py-6">
-  <div class="mx-auto max-w-7xl md:flex md:items-center md:justify-between">
+  <div class="mx-auto max-w-7xl md:flex md:items-start md:justify-between">
     <div class="text-xs tracking-widest font-semibold uppercase">
       &copy; 2014/{% year %} <a href="/">{{ config.title }}</a>
+      <div>
+        <ul class="mt-4 space-y-2">
+          {% for link in navigation.ext %}
+          <li class="">
+            <a
+              href="{{ link.url }}"
+              class="text-xs tracking-widest font-semibold uppercase"
+              rel="nofollow noreferrer noopener"
+              target="_blank"
+              >{{ link.label }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <ul class="mt-4 space-y-2">
+          {% for link in navigation.legal %}
+          <li class="">
+            <a
+              href="{{ link.url }}"
+              class="text-xs tracking-widest font-semibold uppercase"
+              rel="nofollow"
+              >{{ link.label }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
     <ul
       class="md:flex md:justify-center md:items-center md:gap-8 mt-4 md:mt-0 space-y-2 md:space-y-0"

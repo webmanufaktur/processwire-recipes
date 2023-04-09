@@ -1,11 +1,22 @@
 ---
 title: "About"
-seo:
-  robots: noindex, follow
-draft: false
+intro: "All about the ProcessWire.recipes project"
+seotitle: "Check out why the ProcessWire.recipes project is right for you"
+seodesc: "Everything about the ProcessWire.recipes project - and why it's a foundation for new and upcoming ProcessWire developers like you."
+seorobots: index, follow
 ---
 
 Since `processwire-recipes.com` went down and never came back 😔 I decided to play around with all the **ProcessWire Recipes** and moved it over to a fresh new instance of **11ty** running on **Cloudflare Pages** from within a public Github Directory.
+
+{% image "src/assets/images/pwrecipes-pagespeed.png", "processwire.recipes page speed results", "", [full] %}
+
+{% image "src/assets/images/pwrecipes-carbon-footprint.png", "processwire.recipes carbon footprint", "", [full] %}
+
+https://processwire.com/talk/topic/7572-processwire-recipes/
+
+https://www.websitecarbon.com/website/processwire-recipes/
+
+https://docs.astro.build/en/recipes/
 
 ## Recent changes
 
@@ -33,7 +44,8 @@ This project is based on the great work done [Marcus](https://marcus-herrmann.co
 
 The new repository (based on the legacy version) can be found here.
 
-- https://github.com/webmanufaktur/processwire-recipes
+- https://github.com/webmanufaktur/processwire-recipes (Website)
+- https://github.com/processwire-recipes/Recipes/ (Recipes)
 
 Some day in the future additional recipes will be added from my personal collection.
 
@@ -47,11 +59,11 @@ Some day in the future additional recipes will be added from my personal collect
 
 ### Issues? Problems? Questions?
 
-- You can post issues, problems and questions on the [public repository](https://github.com/webmanufaktur/processwire-recipes/issues)
+- You can post issues, problems and questions on the [public repository](https://github.com/processwire-recipes/Recipes/issues)
 
 ### You want to add a recipe?
 
-- Fork the [repository](https://github.com/webmanufaktur/processwire-recipes/), add your recipes or changes, send a pull request
+- Fork the [repository](https://github.com/processwire-recipes/Recipes/), add your recipes or changes, send a pull request
 
 ## Special thanks
 
