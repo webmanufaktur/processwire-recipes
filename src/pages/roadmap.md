@@ -32,7 +32,7 @@ toc: true
 - ❓ **Content ideas** -- What's next?
 - ❗ **Form submissions** -- form-submission platform needed
 
-## ✅Done
+## ✅ Done
 
 - ✔️ **Recipes** -- Merge latest changes back to old/orga repository
 - ✔️ **Recipe Template** -- Updated fields
