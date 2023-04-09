@@ -32,7 +32,7 @@ seorobots: index, follow
 > -- [entrepreneur.com](https://www.entrepreneur.com/science-technology/building-in-public-how-tech-companies-master/359180)
 
 To be clear:
-**I don't see this as a starup of any kind.**
+**I don't see this as a startup of any kind.**
 
 I like the philosophy behind all the amazing **#buildinpublic** projects you can find on [Twitter](https://twitter.com/search?q=%23buildinpublic) for example; or elsewhere.
 
