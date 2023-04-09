@@ -6,10 +6,6 @@ seodesc: "Search ProcessWire Recipes fast and easy. Right now in version 1 avail
 seorobots: index, follow
 ---
 
-Get started with Tailwind CSS
-
-Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.
-
-It's fast, flexible, and reliable — with zero-runtime.
+Our very first version of our **Recipe Search** is online. For the moment it's just something like a _proof of concept_ -- so feedback is highly appreciated.
 
 {% include "search.html" %}
