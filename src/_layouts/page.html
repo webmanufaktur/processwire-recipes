@@ -5,14 +5,21 @@ layout: base.html
 <!-- import macro -->
 {% from "macros.html" import button, hero, cta, ctaContent %}
 <!-- for -->
+
 <article class="">
-  {{ hero(title) }}
+  {{ hero(title, intro) }}
   <div class="pw-gradient">
     <div
-      class="bg-white border-2 max-w-2xl border-gray-100 rounded shadow-xl p-8 mx-auto"
+      class="bg-white border-2 max-w-2xl border-gray-100 rounded shadow-xl p-2 pl-6 pt-6 md:p-8 mx-auto"
     >
+      <!-- EXVERPT -->
+      {% include "excerpt.html" %}
+
+      <!-- TOC -->
+      {% include "toc.html" %}
+
       <div
-        class="prose prose-a:text-gray-800 prose-a:decoration-pwblue prose-a:underline-offset-4 hover:prose-a:decoration-pink-500 prose-a:font-semibold"
+        class="prose prose-a:text-pwblue prose-a:decoration-pwpink prose-a:underline-offset-4 hover:prose-a:decoration-pink-500 prose-a:font-semibold prose-table:table-fixed"
       >
         {{ content | safe }}
       </div>
@@ -23,13 +30,3 @@ layout: base.html
     </div>
   </div>
 </article>
-<!-- <div>
-  <a
-    href="https://github.com/webmanufaktur/processwire-recipes/blob/master/{{ page.inputPath }}"
-    rel="nofollow noreferrer noopener"
-    target="_blank"
-    class="block p-4 border-2 text-xs tracking-widest font-semibold uppercase text-gray-900 text-center no-underline"
-    >Go and edit this recipe on GitHub.</a
-  >
-   max-w-2xl mx-auto
-</div> -->
