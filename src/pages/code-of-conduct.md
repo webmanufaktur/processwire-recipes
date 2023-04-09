@@ -1,7 +1,6 @@
 ---
 title: "Code of Conduct"
-seo:
-  robots: "noindex, follow"
+seorobots: "index, follow"
 ---
 
 1. **Be nice to each other!**

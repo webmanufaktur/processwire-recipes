@@ -1,15 +1,36 @@
 ---
 title: "Changelog"
-seo:
-  robots: "noindex, follow"
+seorobots: "index, follow"
+excerpt: "Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file."
+toc: true
 ---
 
-## ℹ️ 2023-03-18
+## 🗓️ 2023-04-08
+
+### ⚒️ Features
+
+- **Search**<br>Added a first version (proof-of-concept) of the recipe search. [#6](https://github.com/webmanufaktur/processwire-recipes/issues/6)
+- **Prev/Next Links**<br>Added previous/next links on the recipe pages to for faster navigation around recipes. [#7](https://github.com/webmanufaktur/processwire-recipes/issues/7)
+
+### 🐛 Bugfixes
+
+- Twitter Meta/Social Tags [#4](https://github.com/webmanufaktur/processwire-recipes/issues/4)
+- Internal links, SEO tags and assets [#5](https://github.com/webmanufaktur/processwire-recipes/issues/5)
+
+### 🍕 Misc changes
+
+- Added: [Transparency Report](/transparency/)
+- Added: [Advertisement](/advertisement/)
+- Added: [Community projects](/community/)
+- Updated: [About](/about/), [Changelog](/changelog/)
+- Listing only **5 recent recipes** on homepage, makes it a bit faster
+- Enabled _**Table of contens**_ on pages where necessary
+
+## 🗓️ 2023-03-18
 
 - Added:
   - `date` to all existing recipes based on old Github dates
   - [Roadmap](/roadmap/) page for upcoming changes
-  - [Uses](/uses/) page
 - Removed:
   - **Upcoming** from changelog
 - Clean up:
@@ -21,7 +42,7 @@ seo:
 
 ---
 
-## ℹ️ 2023-03-16
+## 🗓️ 2023-03-16
 
 - Minor _design_ tweaks and formatting
 - Updated recipe formatting (see [Submit recipe](/submit-recipe/))
@@ -29,11 +50,11 @@ seo:
 
 ---
 
-## 2023-03-14
+## 🗓️ 2023-03-14
 
 ### ✅ Recipe updates and snippets
 
-Merged a few recipe updates from **@gebeer** today, while he also already created the [first batch](https://github.com/webmanufaktur/processwire-recipes/pull/3) of possible **VS Code Recipe Snippets** -- for the moment totally untested. So if anyone wants to take a look at them and test them. Let us know.
+Merged a few recipe updates from **@gebeer** today, while he also already created the [first batch](https://github.com/webmanufaktur/processwire-recipes/pull/1) of possible **VS Code Recipe Snippets** -- for the moment totally untested. So if anyone wants to take a look at them and test them. Let us know.
 
 ### ✅ _Design_ tweaks
 
@@ -51,9 +72,9 @@ Added [Code of Conduct](/code-of-conduct/). _(Please read!)_
 
 ---
 
-## ℹ️ 2023-03-11
+## 🗓️ 2023-03-11
 
-### Old Github Account
+### 💯 Old/New Github Account
 
 In the last few days [@marcus](https://processwire.com/talk/profile/912-marcus/) and I talked and he made me a member and owner of the _old_ [organization account on Github](https://github.com/processwire-recipes/) so we can still use the old/former official repository - that's **awesome**!
 
@@ -63,18 +84,8 @@ Yet... the old domain is long gone. I tried to contact the new owner but no chan
 
 That's why I bought the [processwire.recipes](https://processwire.recipes/) domain - so I hope it was worth it. 😉
 
-### ℹ️ Upcoming changes
+### 🗓️ Upcoming changes
 
 I will update all recipes to the new markdown format, while keeping a copy of the legacy version in a separate branch/version. I will update all guides on how to submit and update recipes in the next few days.
 
-See: [Forum announcement](https://processwire.com/talk/topic/7572-processwire-recipes/page/3/#comment-231247)
-
----
-
-## 2023-03-05
-
-We now have full access to the old/former Github account and repository. In the near future there will be a slight change in submitting new recipes and changes.
-
----
-
-<small>I hate myself for using so many 🔥 💯 ℹ️ ✅ ❓ but hey... they look nice.</small>
+See [ProcessWire community support thread](https://processwire.com/talk/topic/7572-processwire-recipes/page/3/#comment-231247) for more details and discussions. Maybe even request a feature or recipe to be added.

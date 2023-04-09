@@ -1,7 +1,6 @@
 ---
 title: Imprint
-seo:
-  robots: "noindex, follow"
+seorobots: "noindex, follow"
 ---
 
 ## Information pursuant to Sect. 5 German Telemedia Act (TMG)
