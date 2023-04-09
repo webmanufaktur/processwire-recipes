@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ seo.title or title }}</title>
-    {% if seo.desc %}
-    <meta name="description" content="{{ seo.desc }}" />
+    <title>{{ seotitle or title }}</title>
+    {% if seodesc %}
+    <meta name="description" content="{{ seodesc }}" />
     {% endif %}
     <!-- -->
-    {% if seo.robots %}
-    <meta name="robots" content="{{ seo.robots }}" />
+    {% if seorobots %}
+    <meta name="robots" content="{{ seorobots }}" />
     {% else %}
     <meta name="robots" content="index, follow" />
     {% endif %}
     <link rel="canonical" href="{{ config.url }}{{ page.url }}" />
 
     <!-- OG -->
-    <meta property="og:title" content="{{ seo.title or title }}" />
-    {% if seo.desc %}
-    <meta property="og:description" content="{{ seo.desc }}" />
+    <meta property="og:title" content="{{ seotitle or title }}" />
+    {% if seodesc %}
+    <meta property="og:description" content="{{ seodesc }}" />
     {% endif %}
     <meta
       property="og:image"
+      content="{{ config.url }}/assets/images/processwire-recipes-ogimage.jpg"
+    />
+
+    <!-- Twitter -->
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="{{ config.domain }}" />
+    <meta property="twitter:url" content="{{ config.url }}{{ page.url }}" />
+    <meta name="twitter:title" content="{{ seotitle or title }}" />
+    {% if seodesc %}
+    <meta name="twitter:description" content="{{ seodesc }}" />
+    {% endif %}
+    <meta
+      name="twitter:image"
       content="{{ config.url }}/assets/images/processwire-recipes-ogimage.jpg"
     />
 
