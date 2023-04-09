@@ -1,6 +1,11 @@
 module.exports = {
   main: [
     {
+      label: "About",
+      url: "/about/",
+      classes: "text-sm tracking-widest font-semibold uppercase",
+    },
+    {
       label: "Recipes",
       url: "/recipes/",
       classes: "text-sm tracking-widest font-semibold uppercase",
@@ -15,16 +20,7 @@ module.exports = {
     //   url: "/blog/",
     //   classes: "text-sm tracking-widest font-semibold uppercase",
     // },
-    {
-      label: "Search",
-      url: "/search/",
-      classes: "text-sm tracking-widest font-semibold uppercase",
-    },
-    {
-      label: "About",
-      url: "/about/",
-      classes: "text-sm tracking-widest font-semibold uppercase",
-    },
+
     // {
     //   label: "Submit recipe",
     //   url: "/submit-recipe/",
