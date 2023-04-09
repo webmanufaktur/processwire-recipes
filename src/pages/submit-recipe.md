@@ -1,14 +1,8 @@
 ---
-title: Submit recipe
-seo:
-  desc: "This is how you can submit a ProcessWire recipe, code snippet, guide, and/or howto guide."
-seorobots: ""
+title: "Submit your recipe to ProcessWire Recipes"
+seodesc: "This is how you can submit a ProcessWire recipe, code snippet, guide, and/or howto guide."
 date: 2023-03-08T08:30:56.299Z
 preview: "src/assets/images/processwire-snippets.jpg"
-draft: true
-tags: ""
-categories: ""
-authors: ""
 ---
 
 ## Basic Recipe Markup

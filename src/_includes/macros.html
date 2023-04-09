@@ -1,10 +1,40 @@
 <!-- Button -->
-{% macro button(label, url) %}
+{% macro button(label, url, icon='false', size='default', style='full') %}
+
+<!-- size -->
+{% if size === "default" %}
+{% set btnSize = "text-sm tracking-widest uppercase rounded-md py-2 px-4 flex justify-center items-center" %}
+
+{% elif size === "large" %}
+{% set btnSize = " tracking-widest uppercase rounded-md py-3 px-8 flex justify-center items-center" %}
+
+{% else %}
+{% set btnSize = "text-sm tracking-widest uppercase rounded-md py-2 px-4 flex justify-center items-center" %}
+
+{% endif %}
+
+<!-- color -->
+{% if style === "full" %}
+{% set btnStyle = "bg-pwblue text-white font-semibold" %}
+
+{% elif style === "outline" %}
+{% set btnStyle = "border-2 border-pwblue text-pwblue font-bold " %}
+
+{% else %}
+{% set btnStyle = "bg-pwblue font-semibold text-white" %}
+
+{% endif %}
+
 <a
   href="{{ url }}"
-  class="text-sm tracking-widest font-semibold uppercase bg-pwblue text-white rounded-md py-2 px-4 inline-block"
-  >{{ label }}</a
->
+  class="{{ btnSize }} {{ btnStyle }}"
+  >{{ label }}
+  {% if icon === "true" %}
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 ml-1">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+  </svg>
+  {% endif %}
+  </a>
 {% endmacro %}
 
 

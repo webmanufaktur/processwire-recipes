@@ -1,43 +1,28 @@
 ---
 title: "About"
-seo:
-  robots: noindex, follow
-draft: false
+intro: "All about the ProcessWire.recipes project"
+seotitle: "Check out why the ProcessWire.recipes project is right for you"
+seodesc: "Everything about the ProcessWire.recipes project - and why it's a foundation for new and upcoming ProcessWire developers like you."
+seorobots: index, follow
 ---
 
-Since `processwire-recipes.com` went down and never came back 😔 I decided to play around with all the **ProcessWire Recipes** and moved it over to a fresh new instance of **11ty** running on **Cloudflare Pages** from within a public Github Directory.
+Since `processwire-recipes.com` went down and never came back 😔, I decided to have some fun with all the **ProcessWire Recipes**. I moved them over to a fresh new instance of **11ty** running on **Cloudflare Pages**, which is accessible from a public Github Directory.
+
+## Google Pagespeed Performance
+
+{% image "src/assets/images/pwrecipes-pagespeed.png", "processwire.recipes page speed results", "", [full] %}
+
+I was pleased with how the results looked at first, but I soon realized that they were outdated. Nowadays, there are more considerations to keep in mind, such as accessibility and best practices.
+
+## Website Carbon Footprint
+
+[{% image "src/assets/images/pwrecipes-carbon-footprint.png", "processwire.recipes carbon footprint", "", [full] %}](https://www.websitecarbon.com/website/processwire-recipes/)
+
+I also checked the website's carbon footprint, and I was pleasantly surprised by the results. It performed better than 98% of all pages that were tested, which made me feel really good about using a static site generator on an EDGE hosting provider.
 
 ## Recent changes
 
-See more updates in our [changelog](/changelog/).
-
-### Update: 2023-03-05
-
-We now have full access to the old/former Github account and repository. In the near future there will be a slight change in submitting new recipes and changes.
-
-### Update: 2023-03-11
-
-[processwire.recipes](https://processwire.recipes/) is our new home now.
-
-While this is already awesome we will soon switch back to the [old official Github repo](https://github.com/processwire-recipes/Recipes) but with a new markdown format for upcoming recipes and updates.
-
-See: [Forum announcement](https://processwire.com/talk/topic/7572-processwire-recipes/page/3/#comment-231247) and [Changelog](/changelog/)
-
-## ProcessWire Recipes Legacy (Github)
-
-This project is based on the great work done [Marcus](https://marcus-herrmann.com/). As his project went offline some time ago I put it online again - in a different but similar way.
-
-- https://github.com/processwire-recipes/Recipes
-
-## ProcessWire Recipes 2023 (Github)
-
-The new repository (based on the legacy version) can be found here.
-
-- https://github.com/webmanufaktur/processwire-recipes
-
-Some day in the future additional recipes will be added from my personal collection.
-
-- https://github.com/webmanufaktur/processwire-snippets
+See more updates and changes in our [changelog](/changelog/).
 
 ### Site details
 
@@ -47,11 +32,11 @@ Some day in the future additional recipes will be added from my personal collect
 
 ### Issues? Problems? Questions?
 
-- You can post issues, problems and questions on the [public repository](https://github.com/webmanufaktur/processwire-recipes/issues)
+- You can post issues, problems and questions on the [public repository](https://github.com/processwire-recipes/Recipes/issues)
 
 ### You want to add a recipe?
 
-- Fork the [repository](https://github.com/webmanufaktur/processwire-recipes/), add your recipes or changes, send a pull request
+- Fork the [repository](https://github.com/processwire-recipes/Recipes/), add your recipes or changes, send a pull request
 
 ## Special thanks
 

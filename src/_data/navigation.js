@@ -6,10 +6,21 @@ module.exports = {
       classes: "text-sm tracking-widest font-semibold uppercase",
     },
     {
-      label: "Links",
-      url: "/links/",
+      label: "Recipes",
+      url: "/recipes/",
       classes: "text-sm tracking-widest font-semibold uppercase",
     },
+    // {
+    //   label: "Tutorials",
+    //   url: "/tutorials/",
+    //   classes: "text-sm tracking-widest font-semibold uppercase",
+    // },
+    // {
+    //   label: "Blog",
+    //   url: "/blog/",
+    //   classes: "text-sm tracking-widest font-semibold uppercase",
+    // },
+
     // {
     //   label: "Submit recipe",
     //   url: "/submit-recipe/",
@@ -27,6 +38,11 @@ module.exports = {
       url: "/changelog/",
     },
     // {
+    //   label: "Links",
+    //   url: "/links/",
+    //   classes: "text-sm tracking-widest font-semibold uppercase",
+    // },
+    // {
     //   label: "Stack",
     //   url: "/stack/",
     // },
@@ -34,6 +50,18 @@ module.exports = {
       label: "Code of Conduct",
       url: "/code-of-conduct/",
     },
+  ],
+  ext: [
+    {
+      label: "Our Carbon Footprint",
+      url: "https://www.websitecarbon.com/website/processwire-recipes/",
+    },
+    {
+      label: "Our Page Speed",
+      url: "https://pagespeed.web.dev/analysis/https-processwire-recipes/ah2pxrb4rn?form_factor=mobile",
+    },
+  ],
+  legal: [
     {
       label: "Imprint",
       url: "/imprint/",
