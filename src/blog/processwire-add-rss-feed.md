@@ -1,6 +1,8 @@
 ---
 title: "Add RSS Feed"
-seo: { title: "How to add RSS Feed", desc: "RSS" }
+seotitle: "How to add RSS Feed"
+seodesc: "RSS"
+seorobots: "noindex, nofollow"
 date: 2023-03-20
 version: 1.0.0
 authors:

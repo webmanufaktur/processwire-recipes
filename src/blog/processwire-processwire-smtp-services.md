@@ -2,7 +2,7 @@
 title: ProcessWire SMTP Services
 seotitle: ""
 seodesc: ""
-seorobots: ""
+seorobots: "noindex, nofollow"
 date: 2023-03-22T17:19:13.567Z
 preview: ""
 draft: true
