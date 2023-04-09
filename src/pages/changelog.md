@@ -1,7 +1,7 @@
 ---
 title: "Changelog"
 seorobots: "index, follow"
-excerpt: "Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file."
+excerpt: "All recent updates on this website summarized from new to old. In case you missed an announcement or release notification."
 toc: true
 ---
 
