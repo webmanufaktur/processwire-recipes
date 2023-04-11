@@ -1,0 +1,85 @@
+<ul class="max-w-5xl mx-auto hidden">
+  {% for recipe in collections.recipes | sortByTitle %}
+  <li
+    class="flex items-center justify-between bg-white rounded-lg even:bg-sky-100 py-2 px-4"
+  >
+    <a href="{{ recipe.url }}" class="font-bold">{{ recipe.data.title }}</a>
+    <div class="mt-2 md:mt-4">
+      {% for tag in recipe.data.tags %} {% if tag != "recipes" %} {% include
+      "_partials/tag.html" %} {% endif %} {% endfor %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+<ol class="list-decimal space-y-6 max-w-5xl table mx-auto hidden" reversed>
+  {% for recipe in collections.recipes | sortByTitle %}
+  <li class="">
+    <a
+      href="{{ recipe.url }}"
+      class="text-lg text-pwblue underline underline-offset-8 font-semibold decoration-2 decoration-purple-600/30 hover:decoration-red-600 hover:text-sky-800"
+      >{{ recipe.data.title }}</a
+    >
+    <div class="hidden mt-2 md:mt-4">
+      {% for tag in recipe.data.tags %} {% if tag != "recipes" %} {% include
+      "_partials/tag.html" %} {% endif %} {% endfor %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
+
+{# createTagPages #}
+
+<article class="prose max-w-2xl mx-auto">
+  {{ hero(title) }}
+  <div>{{ content | safe }}</div>
+
+  <div>
+    <ul class="space-y-6">
+      {% for recipe in collections[ tag ] | sortByTitle %}
+      <li>
+        <a href="{{ recipe.url }}">{{ recipe.data.title }}</a>
+        <div class="mt-2">
+          {% for tag in recipe.data.tags %} {% if tag != "recipes" %}
+          <a
+            href="/topic/{{ tag | slugify }}/"
+            class="no-underline border-2 text-sm border-zinc-200 bg-zinc-100 rounded p-1"
+            >#{{ tag }}</a
+          >
+          {% endif %} {% endfor %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>
+
+<article class="pb-24">
+  {{ hero(title) }}
+  <div class="bg-white shadow-lg p-8 prose mx-auto">
+    {{ content | safe }}
+
+    <div>
+      <ul class="space-y-6">
+        {% for recipe in collections[ tag ] | sortByTitle %}
+        <li>
+          <a href="{{ recipe.url }}">{{ recipe.data.title }}</a>
+          <div class="mt-2">
+            {% for tag in recipe.data.tags %} {% if tag != "recipes" %}
+            <a
+              href="/topic/{{ tag | slugify }}/"
+              class="no-underline border-2 text-sm border-zinc-200 bg-zinc-100 rounded p-1"
+              >#{{ tag }}</a
+            >
+            {% endif %} {% endfor %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</article>
+
+{# tag #}
+<a href="/topic/{{ tag | slugify }}/" class="font-semibold no-underline mr-2">
+  <span class="text-pwblue font-bold">#</span><span>{{ tag }}</span>
+</a>

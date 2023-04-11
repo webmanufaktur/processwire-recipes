@@ -2,11 +2,11 @@
 {% from "macros.html" import button %}
 <!-- for -->
 
-<header class="py-8 px-6">
-  <div class="flex justify-between items-center mx-auto max-w-5xl">
+<header class="py-8 md:px-12 px-6">
+  <div class="flex justify-between items-center mx-auto max-w-7xl">
     <div>
       <a
-        href="/"
+        href="{{ config.url}}/"
         class="font-bold inline-block text-lg md:text-xl leading-5 md:leading-6"
       >
         ProcessWire<br class="" />Recipes<span
@@ -25,6 +25,24 @@
         </li>
         {% endfor %}
         <li>{{ button("Submit recipe", "/submit-recipe/") }}</li>
+        <li>
+          <a href="/search/" title="Open search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </a>
+        </li>
       </ul>
     </nav>
     <button role="button" class="bg-pwblue text-white rounded-md p-3 hidden">

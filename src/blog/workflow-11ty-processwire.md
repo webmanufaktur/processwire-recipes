@@ -1,0 +1,3 @@
+---
+seorobots: noindex, nofollow
+---

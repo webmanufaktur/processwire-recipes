@@ -11,12 +11,18 @@ const markdownItImageFigures = require("markdown-it-image-figures");
 const mila = require("markdown-it-link-attributes");
 const markdownItAnchor = require("markdown-it-anchor");
 
+// Autolinks
+const crosslinker = require("markdown-it-auto-crosslinker");
+const dictionaryData = fs.readFileSync("src/_data/keywords.json");
+const dictionary = JSON.parse(dictionaryData);
+
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 const pluginTOC = require("eleventy-plugin-toc");
 const svgContents = require("eleventy-plugin-svg-contents");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const faviconPlugin = require("eleventy-favicon");
+const EleventyPluginOgImage = require("eleventy-plugin-og-image");
 
 // Details about HowTo enable MarkdownIt Image Figures
 // https://github.com/Antonio-Laguna/markdown-it-image-figures
@@ -33,6 +39,10 @@ markdown.use(markdownItImageFigures, {
   async: true,
   classes: "lazy",
   figcaption: true,
+});
+markdown.use(crosslinker, {
+  dictionary,
+  wholeWords: true,
 });
 markdown.use(markdownItAnchor);
 markdown.use(mila, [
@@ -77,8 +87,8 @@ async function imageShortcodeRelative(src, alt, cls, wdth = "null") {
   let metadata = await Image(file, {
     widths: wdth,
     formats: ["webp"],
-    urlPath: "/assets/media/", // used in frontend
-    outputDir: "_site/assets/media/", // used in dev
+    urlPath: "/media/", // used in frontend
+    outputDir: "_site/media/", // used in dev
     // filenameFormat: function (id, src, width, format) {
     //     const extension = path.extname(src);
     //     const name = path.basename(src, extension);
@@ -103,19 +113,19 @@ async function imageShortcodeRelative(src, alt, cls, wdth = "null") {
 async function imageShortcode(src, alt, cls, wdth = "null") {
   let metadata = await Image(src, {
     widths: wdth,
-    formats: ["webp"],
-    urlPath: "/assets/media/", // used in frontend
-    outputDir: "_site/assets/media/", // used in dev
-    filenameFormat: function (id, src, width, format) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
+    formats: ["jpg", "webp"],
+    urlPath: "/media/", // used in frontend
+    outputDir: "_site/media/", // used in dev
+    // filenameFormat: function (id, src, width, format) {
+    //   const extension = path.extname(src);
+    //   const name = path.basename(src, extension);
 
-      return `${name}-${id}-${width}w.${format}`;
-    },
+    //   return `${name}-${id}-${width}w.${format}`;
+    // },
     cacheOptions: {
       duration: "1d",
       directory: ".cache",
-      removeUrlQueryParams: false,
+      removeUrlQueryParams: true,
     },
   });
   let imageAttributes = {
@@ -131,26 +141,28 @@ async function imageShortcode(src, alt, cls, wdth = "null") {
 
 // module exports
 module.exports = function (eleventyConfig) {
-  // custom collection
+  // custom collections
+  // featured posts. pages, recipes
   eleventyConfig.addCollection("featured", function (collection) {
     return collection.getAll().filter((item) => item.data.featured);
   });
 
   // Set directories to pass through to the _site folder
   eleventyConfig.addPassthroughCopy("src/assets/fonts/");
+  eleventyConfig.addPassthroughCopy("src/assets/images/");
   eleventyConfig.addPassthroughCopy("src/google10e1d7d7dc049d58.html");
 
   // Inline SVGs
   // eleventyConfig.addPlugin(svgContents);
 
   // Favicon generator
-  // eleventyConfig.addPlugin(faviconPlugin);
+  eleventyConfig.addPlugin(faviconPlugin);
 
   // TOC
   eleventyConfig.addPlugin(pluginTOC, {
     tags: ["h2", "h3"], // which heading tags are selected headings must each have an ID attribute
     wrapper: "div", // element to put around the root `ol`/`ul`
-    wrapperClass: "toc prose", // class for the element around the root `ol`/`ul`
+    wrapperClass: "toc", // class for the element around the root `ol`/`ul`
     ul: true, // if to use `ul` instead of `ol`
     flat: false, // if subheadings should appear as child of parent or as a sibling
   });
@@ -182,6 +194,26 @@ module.exports = function (eleventyConfig) {
   // shortcode for inserting the current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+  // ogimage2
+
+  // eleventyConfig.addPlugin(EleventyPluginOgImage, {
+  //   satoriOptions: {
+  //     fonts: [
+  //       {
+  //         name: "Montserrat",
+  //         data: fs.readFileSync(
+  //           "./src/assets/fonts/montserrat/montserrat-v25-latin-regular.woff"
+  //         ),
+  //         weight: 400,
+  //         style: "normal",
+  //       },
+  //     ],
+  //   },
+  //   hashLength: 16,
+  //   outputDir: "_site/assets/media/",
+  //   urlPath: "/assets/media/",
+  // });
+
   // rating
   eleventyConfig.addFilter("rating", function (rating) {
     let output = "";
@@ -194,9 +226,32 @@ module.exports = function (eleventyConfig) {
     return output;
   });
   //excerpt
-  eleventyConfig.addFilter("excerpt", (post) => {
-    const content = post.replace(/(<([^>]+)>)/gi, "");
+  eleventyConfig.addFilter("excerpt", (tc) => {
+    const content = tc.replace(/(<([^>]+)>)/gi, "");
+    // const content = tc.replace(/(<([^>]+)>-)/gi, "");
     return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+  });
+
+  //striptags
+  eleventyConfig.addFilter("striptags", (post) => {
+    return (content = post.replace(/(<([^>]+)>)/gi, ""));
+    // return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+  });
+
+  // Define a filter to make a string uppercase
+  eleventyConfig.addFilter("uppercase", function (value) {
+    if (value && typeof value === "string") {
+      return value.toUpperCase();
+    }
+    return value;
+  });
+
+  // Define a filter to capitalize the first letter of a string
+  eleventyConfig.addFilter("capitalize", function (value) {
+    if (value && typeof value === "string") {
+      return value.charAt(0).toUpperCase() + value.slice(1);
+    }
+    return value;
   });
 
   // FILTERS
@@ -209,7 +264,7 @@ module.exports = function (eleventyConfig) {
     // );
     // return DateTime.fromJSDate(dateObj).toLocaleString();
     // return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
-    return DateTime.fromJSDate(dateObj).toFormat("dd.MM.yyyy");
+    return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
   eleventyConfig.addFilter("slice", (array, start, end) => {
@@ -280,24 +335,26 @@ module.exports = function (eleventyConfig) {
     for (let item of collection) {
       (item.data.categories || []).forEach((item) => collectionSet.add(item));
     }
-    return Array.from(collectionSet);
+    return Array.from(collectionSet).sort();
   });
 
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-    return (tags || []).filter(
-      (tag) =>
-        [
-          "all",
-          "nav",
-          "post",
-          "posts",
-          "pages",
-          "snippets",
-          "links",
-          "pillows",
-          "recipes",
-        ].indexOf(tag) === -1
-    );
+    return (tags || [])
+      .filter(
+        (tag) =>
+          [
+            "all",
+            "nav",
+            "post",
+            "posts",
+            "pages",
+            "snippets",
+            "links",
+            "pillows",
+            "recipes",
+          ].indexOf(tag) === -1
+      )
+      .sort();
   });
 
   // TRANSFORMS

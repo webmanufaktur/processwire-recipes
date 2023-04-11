@@ -10,152 +10,7 @@
   }
 }
 
-/* prism highlight gruvbox */
-/**
- * Gruvbox dark theme
- *
- * Adapted from a theme based on:
- * Vim Gruvbox dark Theme (https://github.com/morhetz/gruvbox)
- *
- * @author Azat S. <to@azat.io>
- * @version 1.0
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #ebdbb2; /* fg1 / fg */
-  font-family: Consolas, Monaco, "Andale Mono", monospace;
-  /* font-family: "Courier New", Courier, monospace; */
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  line-height: 1.5;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection {
-  color: #fbf1c7; /* fg0 */
-  background: #7c6f64; /* bg4 */
-}
-
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-code[class*="language-"]::selection,
-code[class*="language-"] ::selection {
-  color: #fbf1c7; /* fg0 */
-  background: #7c6f64; /* bg4 */
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: #1d2021; /* bg0_h */
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: 0.1em;
-  border-radius: 0.3em;
-}
-
-.token.comment,
-.token.prolog,
-.token.cdata {
-  color: #a89984; /* fg4 / gray1 */
-}
-
-.token.delimiter,
-.token.boolean,
-.token.keyword,
-.token.selector,
-.token.important,
-.token.atrule {
-  color: #fb4934; /* red2 */
-}
-
-.token.operator,
-.token.punctuation,
-.token.attr-name {
-  color: #a89984; /* fg4 / gray1 */
-}
-
-.token.tag,
-.token.tag .punctuation,
-.token.doctype,
-.token.builtin {
-  color: #fabd2f; /* yellow2 */
-}
-
-.token.entity,
-.token.number,
-.token.symbol {
-  color: #d3869b; /* purple2 */
-}
-
-.token.property,
-.token.constant,
-.token.variable {
-  color: #fb4934; /* red2 */
-}
-
-.token.string,
-.token.char {
-  color: #b8bb26; /* green2 */
-}
-
-.token.attr-value,
-.token.attr-value .punctuation {
-  color: #a89984; /* fg4 / gray1 */
-}
-
-.token.url {
-  color: #b8bb26; /* green2 */
-  text-decoration: underline;
-}
-
-.token.function {
-  color: #fabd2f; /* yellow2 */
-}
-
-.token.regex {
-  background: #b8bb26; /* green2 */
-}
-
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-.token.inserted {
-  background: #a89984; /* fg4 / gray1 */
-}
-
-.token.deleted {
-  background: #fb4934; /* red2 */
-}
-
+/* Image Breakout */
 .breakout {
   width: 100vw;
   position: relative;
@@ -164,4 +19,142 @@ pre[class*="language-"] {
   margin-left: -50vw;
   margin-right: -50vw;
   /* padding: 0 1rem; */
+}
+
+/* Wrap long links */
+article a {
+  overflow-wrap: break-word;
+}
+
+/* Custom PW Gradient */
+.pw-gradient {
+  background: linear-gradient(
+    to bottom,
+    white 4rem,
+    #2480e6 4rem calc(100% - 4rem),
+    white calc(100% - 4rem)
+  );
+}
+
+/**
+ * Dracula Theme originally by Zeno Rocha [@zenorocha]
+ * https://draculatheme.com/
+ *
+ * Ported for PrismJS by Albert Vallverdu [@byverdu]
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #282a36;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6272a4;
+}
+
+.token.punctuation {
+  color: #f8f8f2;
+}
+
+.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #ff79c6;
+}
+
+.token.boolean,
+.token.number {
+  color: #bd93f9;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #50fa7b;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #f1fa8c;
+}
+
+.token.keyword {
+  color: #8be9fd;
+}
+
+.token.regex,
+.token.important {
+  color: #ffb86c;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
 }

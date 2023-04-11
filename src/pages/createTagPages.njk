@@ -1,52 +1,65 @@
 ---
 pagination:
-    data: collections
-    addAllPagesToCollections: true
-    size: 1
-    alias: tag
-    filter:
-        - all
-        - post
-        - posts
-        - tagList
-        - links
-        - pillows
-        - recipes
+  data: collections
+  addAllPagesToCollections: true
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - post
+    - posts
+    - tagList
+    - links
+    - pillows
+    - recipes
 eleventyComputed:
-    title: "ProcessWire Recipes: {{ tag }}"
-    titleRendered: More posts talking about <span class="block text-red-600">{{ tag }}</span>
-    seo:
-        title: More about {{ tag }}
-        desc: All posts, snippets and various other content talking about {{ tag }}.
-        robots: "noindex, nofollow"
+  title: "ProcessWire Recipes:<br /><span class='text-pwblue capitalize'>{{ tag | capitalize }}</span>"
+  titleRendered: More recipes talking about <span class="block text-red-600">{{ tag }}</span>
+  seotitle: "How To: ProcessWire {{ tag | capitalize }} - ProcessWire recipes that match your search: {{ tag | uppercase }}"
+  seodesc: "ProcessWire {{ tag | capitalize }} - Your are looking for: ProcessWire {{ tag | capitalize }} solutions?. We have all the posts, snippets and articles mentioning '{{ tag | capitalize }}'. Click right here..."
+  seorobots: "index, follow"
 permalink: /topic/{{ tag | slugify }}/
 layout: "base.html"
 ---
 
-<article class="prose max-w-2xl mx-auto">
-    <div>
-        <h1>{{ title }}</h1>
-    </div>
-    <div>{{ content | safe }}</div>
+<!-- import macro -->
+{% from "macros.html" import hero %}
 
-    <div>
-        <ul class="space-y-6">
-            {% for recipe in collections[ tag ] | sortByTitle %}
-            <li>
-                <a href="{{ recipe.url }}">{{ recipe.data.title }}</a>
-                <div class="mt-2">
-                    {% for tag in recipe.data.tags %}
-                     {% if tag != "recipes" %}
-                    <a
-                        href="/topic/{{ tag | slugify }}/"
-                        class="no-underline border-2 text-sm border-zinc-200 bg-zinc-100 rounded p-1"
-                        >#{{ tag }}</a
-                    >
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </li>
+<article>
+  {{ hero(title) }}
+  <section class="pw-gradient">
+    <ul class="space-y-8 md:space-y-12 max-w-2xl w-full mx-auto px-4">
+      {% for recipe in collections[ tag ] | sortByTitle %}
+      <li class="sticky top-8">
+        <div class="border-2 border-gray-100 bg-white p-6 md:p-8 rounded">
+          <a href="{{ recipe.url }}" class="text-lg block">
+            <span class="font-bold"> {{ recipe.data.title }} </span>
+          </a>
+            <ul class="text-gray-500 text-sm tabular-nums leading-normal">
+              <li>
+                Added/Updated:
+                <span class="font-semibold">{{ recipe.data.date | postDate }}</span>
+              </li>
+              <li>
+                Authors:
+                <span class="font-semibold">{{ recipe.data.authors }}</span>
+              </li>
+            </ul>
+
+          <div class="mt-2 md:mt-4 flex gap-1 md:gap-2 flex-wrap">
+            {% for tag in recipe.data.tags %}
+            {% if tag != "recipes" and tag != "posts" %}
+            {% include "_partials/tag.html" %}
+            {% endif %}
             {% endfor %}
-        </ul>
-    </div>
+          </div>
+
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 </article>
+
+<!-- Tags -->
+{# {% include "renderedTagCloud.html" %} #}

@@ -1,0 +1,18 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+/stack/ /uses/ 301
+
+{# [source] [destination] [code?] #}
+{# old tag pages to new tag pages #}
+{%- for tag in collections.all | getAllTags | filterTagList %}
+{%- if tag != "search" %}
+/{{ tag | slugify }}/ /topic/{{ tag | slugify }}/ 301
+{%- endif %}
+{%- endfor %}
+
+
+{%- for recipe in collections.recipes %}
+/{{ recipe.fileSlug | slugify }}/ /recipes/{{ recipe.fileSlug | slugify }}/ 301
+{%- endfor %}

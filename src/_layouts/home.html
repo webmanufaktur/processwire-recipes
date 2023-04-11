@@ -1,18 +1,17 @@
 ---
 layout: base.html
-headline: "ProcessWire Recipes"
-intro: "A collection of ProcessWire API snippets to solve common tasks, provide
-full solutions, and some little helpers that make work with the API
-easier."
 ---
 
 <!-- import macro -->
-{% from "macros.html" import button, hero %}
+{% from "macros.html" import hero, button %}
 <!-- for -->
 
 <article>
   {{ hero(headline, intro) }}
-  <section class="bg-pwblue pb-24">{% include "recipeList.html" %}</section>
-</article>
+  <section class="pw-gradient">{% include "recipeListNewest.html" %}</section>
 
-{# {% include "renderedTagCloud.html" %} #}
+  <div class="table mx-auto mt-8">
+    {{ button("See all ProcessWire recipes", "/recipes/", icon="false",
+    size="large", style="outline") }}
+  </div>
+</article>

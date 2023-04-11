@@ -1,0 +1,16 @@
+<!-- ogTitle -->
+{% set ogHeadline = og.headline or title %}
+<!-- ogTopline -->
+{% set ogTopline = og.topline or '' %}
+<!-- ogSubline -->
+{% set ogSubline = og.subline or meta.company %}
+<!-- ogAccent -->
+{% set ogAccent = og.accent or '#000000' %}
+<!-- ogText -->
+{% set ogText = og.text or '#000000' %}
+<!-- ogBackground -->
+{% set ogBackground = og.background or '#efefef' %}
+<!-- ogImage -->
+{% ogImage "./src/_layouts/ogimage.og.njk", { headline: ogHeadline, topline:
+ogTopline, subline: ogSubline, accent: ogAccent, text: ogText, background:
+ogBackground } %}

@@ -1,21 +1,19 @@
 <section class="py-12 px-6 bg-pwblue text-white">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-xl md:text-3xl font-bold">
+    <h2 class="text-xl md:text-2xl font-bold">
       These wonderful people made this whole project possible. 👏👏👏
     </h2>
-    <div class="mt-4">
-      <div class="mt-8 flex flex-wrap gap-2 md:gap-4">
-        {% for author in collections.all | getAllAuthors %}
-        <div
-          class="md:py-2 md:px-4 py-1 px-2 bg-white text-slate-800 rounded-lg flex items-center"
-        >
-          <span class="mr-2">👍</span>
-          <span class="capitalize text-sm md:text-lg font-medium">
-            {{ author }}</span
-          >
-        </div>
-        {% endfor %}
+
+    <div class="mt-8 flex flex-wrap gap-2 md:gap-4">
+      {% for author in collections.all | getAllAuthors %}
+
+      <div
+        class="bg-slate-50 dark:bg-slate-700 dark:text-slate-100 text-slate-800 py-2 px-4 rounded text-xs tracking-widest font-semibold shadow-inner uppercase inline-block"
+      >
+        <span class="text-pwblue text-lg">👍</span>
+        <span class="">{{ author }}</span>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>

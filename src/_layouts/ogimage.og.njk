@@ -1,0 +1,169 @@
+<style>
+    .root {
+        font-family: "Plex";
+        width: 1200px;
+        height: 630px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        padding: 0;
+        line-height: 1em;
+        width: 100%;
+    }
+
+    .flex {
+        display: flex;
+    }
+    .flex-row {
+        flex-flow: row;
+    }
+    .flex-col {
+        flex-flow: column;
+    }
+
+    .justify-between {
+        justify-content: space-between;
+    }
+    .justify-center {
+        justify-content: center;
+    }
+    .items-center {
+        align-items: center;
+    }
+
+    .text-xs {
+        font-size: 18px;
+    }
+    .text-sm {
+        font-size: 20px;
+    }
+    .text-base {
+        font-size: 26px;
+    }
+    .text-lg {
+        font-size: 72px;
+    }
+    .text-xl {
+        font-size: 80px;
+    }
+
+    .text-black {
+        color: #000000;
+    }
+    .text-white {
+        color: #ffffff;
+    }
+    .text-gray {
+        color: #666666;
+    }
+    .text-accent {
+        color: #000000;
+    }
+
+    .background-black {
+        background-color: #000000;
+    }
+    .background-white {
+        background-color: #ffffff;
+    }
+    .background-gray {
+        background-color: #666666;
+    }
+    .background-accent {
+        background-color: #000000;
+    }
+
+    .t-4 {
+        margin-top: 1rem;
+    }
+    .t-8 {
+        margin-top: 2rem;
+    }
+    .t-12 {
+        margin-top: 3rem;
+    }
+    .t-16 {
+        margin-top: 4rem;
+    }
+
+    .b-4 {
+        margin-bottom: 1rem;
+    }
+    .b-8 {
+        margin-bottom: 2rem;
+    }
+    .b-12 {
+        margin-bottom: 3rem;
+    }
+    .b-16 {
+        margin-bottom: 4rem;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+
+    .font-light {
+        font-weight: 300;
+    }
+    .font-regular {
+        font-weight: 400;
+    }
+    .font-medium {
+        font-weight: 500;
+    }
+    .font-bold {
+        font-weight: 700;
+    }
+
+    .tracking-wider {
+        letter-spacing: 0.1em;
+    }
+    .tracking-widest {
+        letter-spacing: 0.25em;
+    }
+
+    .border-22 {
+        border: 2px solid blue;
+    }
+
+    .max-w {
+        max-width: 1000px;
+    }
+</style>
+
+<div class="root flex flex-col items-center justify-center bg-white text-black">
+    <div class="max-w flex flex-col items-center tracking-widest">
+        <h2
+            class="text-gray border-2 text-center text-base font-medium tracking-wider"
+        >
+            {{ topline }}
+        </h2>
+        <h1 class="b-16 t-4 border-2 text-center text-lg font-medium">
+            {{ headline }}
+        </h1>
+        <h2
+            class="text-gray border-2 text-center text-base font-bold uppercase"
+        >
+            <span
+                class="bg-black text-white"
+                style="
+                    padding: 0.5rem 1rem;
+                    vertical-align: middle;
+                    margin: auto;
+                "
+            >
+                {{ subline }}
+            </span>
+        </h2>
+    </div>
+</div>

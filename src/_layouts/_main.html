@@ -1,27 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ seo.title or title }}</title>
-    {% if seo.desc %}
-    <meta name="description" content="{{ seo.desc }}" />
+    <title>{{ seotitle or title }}</title>
+    {% if seodesc %}
+    <meta name="description" content="{{ seodesc }}" />
     {% endif %}
     <!-- -->
-    {% if seo.robots %}
-    <meta name="robots" content="{{ seo.robots }}" />
+    {% if seorobots %}
+    <meta name="robots" content="{{ seorobots }}" />
     {% else %}
     <meta name="robots" content="index, follow" />
     {% endif %}
     <link rel="canonical" href="{{ config.url }}{{ page.url }}" />
+
+    <!-- OG -->
+    <meta property="og:title" content="{{ seotitle or title }}" />
+    {% if seodesc %}
+    <meta property="og:description" content="{{ seodesc }}" />
+    {% endif %}
+    <meta
+      property="og:image"
+      content="{{ config.url }}/assets/images/processwire-recipes-ogimage.jpg"
+    />
+
+    <!-- Twitter -->
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="{{ config.domain }}" />
+    <meta property="twitter:url" content="{{ config.url }}{{ page.url }}" />
+    <meta name="twitter:title" content="{{ seotitle or title }}" />
+    {% if seodesc %}
+    <meta name="twitter:description" content="{{ seodesc }}" />
+    {% endif %}
+    <meta
+      name="twitter:image"
+      content="{{ config.url }}/assets/images/processwire-recipes-ogimage.jpg"
+    />
+
+    <!-- CSS -->
     <link
       rel="preload"
       href="/assets/fonts/montserrat/montserrat.css"
       as="style"
     />
-    <link rel="stylesheet" href="/assets/fonts/montserrat/montserrat.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/fonts/montserrat/montserrat.css?cache={{ config.timestamp }}"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/montserrat/montserrat-v25-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="preload" href="/assets/css/tailwind.dist.css" as="style" />
-    <link rel="stylesheet" href="/assets/css/tailwind.dist.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/tailwind.dist.css?cache={{ config.timestamp }}"
+    />
+
+    <!-- Favicon -->
+    {% favicon 'src/assets/images/favicon.png' %}
+    <!-- JS -->
+
+    <link rel="preload" href="/assets/js/alpine.dist.js" as="script" />
+    <link rel="preload" href="/assets/js/app.dist.js" as="script" />
+    <link rel="preload" href="/assets/js/search.dist.js" as="script" />
+
+    <script src="/assets/js/search.dist.js" defer></script>
     <script>
       if (localStorage.getItem("color-theme") === "dark") {
         document.documentElement.classList.add("dark");
@@ -29,8 +79,16 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
+    <script
+      defer
+      src="/assets/js/app.dist.js?cache={{ config.timestamp }}"
+    ></script>
+    <script
+      defer
+      src="/assets/js/alpine.dist.js?cache={{ config.timestamp }}"
+    ></script>
   </head>
-  <body>
+  <body x-data class="text-gray-900">
     {{ content | safe }}
   </body>
 </html>

@@ -78,8 +78,12 @@
       "path": "[[workspace]]/src/pages"
     },
     {
+      "title": "posts",
+      "path": "[[workspace]]/src/blog"
+    },
+    {
       "title": "recipes",
-      "path": "[[workspace]]/src/recipes"
+      "path": "[[workspace]]/src/Recipes"
     }
   ],
   "frontMatter.taxonomy.tags": [
@@ -140,7 +144,6 @@
     "switches",
     "tag",
     "tags",
-    "template",
     "templates",
     "thumbnails",
     "time",

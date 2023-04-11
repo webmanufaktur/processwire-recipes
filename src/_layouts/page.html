@@ -3,10 +3,30 @@ layout: base.html
 ---
 
 <!-- import macro -->
-{% from "macros.html" import button, hero %}
+{% from "macros.html" import button, hero, cta, ctaContent %}
 <!-- for -->
 
-<article class="pb-24">
-  {{ hero(title) }}
-  <div class="bg-white shadow-lg p-8 prose mx-auto">{{ content | safe }}</div>
+<article class="">
+  {{ hero(title, intro) }}
+  <div class="pw-gradient">
+    <div
+      class="bg-white border-2 max-w-2xl border-gray-100 rounded shadow-xl p-2 pl-6 pt-6 md:p-8 mx-auto"
+    >
+      <!-- EXVERPT -->
+      {% include "excerpt.html" %}
+
+      <!-- TOC -->
+      {% include "toc.html" %}
+
+      <div
+        class="prose prose-a:text-pwblue prose-a:decoration-pwpink prose-a:underline-offset-4 hover:prose-a:decoration-pink-500 prose-a:font-semibold prose-table:table-fixed"
+      >
+        {{ content | safe }}
+      </div>
+
+      {% if showCta %}
+      <div>{{ ctaContent(page.fileSlug) }}</div>
+      {% endif %}
+    </div>
+  </div>
 </article>
