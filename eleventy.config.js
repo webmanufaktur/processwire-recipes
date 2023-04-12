@@ -169,23 +169,12 @@ module.exports = function (eleventyConfig) {
 
   // Syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
-
-  // asset management
-  // 2023-02-21
-  // eleventyConfig.addPlugin(pluginPageAssets, {
-  //     mode: "directory",
-  //     postsMatching: "src/**/*.md",
-  //     assetsMatching: "*.jpg|*.png|*.gif|*.mp4|*.webp|*.webm|.svg",
-  //     silent: true,
-  // });
-
   // RSS Feeds
   eleventyConfig.addPlugin(pluginRss, {
     posthtmlRenderOptions: {
       closingSingleTag: "default", // opt-out of <img/>-style XHTML single tags
     },
   });
-
   // SHORTCODES
   // 11ty image plugin shortcode
   eleventyConfig.addNunjucksAsyncShortcode("img", imageShortcodeRelative);
@@ -193,26 +182,6 @@ module.exports = function (eleventyConfig) {
 
   // shortcode for inserting the current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-
-  // ogimage2
-
-  // eleventyConfig.addPlugin(EleventyPluginOgImage, {
-  //   satoriOptions: {
-  //     fonts: [
-  //       {
-  //         name: "Montserrat",
-  //         data: fs.readFileSync(
-  //           "./src/assets/fonts/montserrat/montserrat-v25-latin-regular.woff"
-  //         ),
-  //         weight: 400,
-  //         style: "normal",
-  //       },
-  //     ],
-  //   },
-  //   hashLength: 16,
-  //   outputDir: "_site/assets/media/",
-  //   urlPath: "/assets/media/",
-  // });
 
   // rating
   eleventyConfig.addFilter("rating", function (rating) {
@@ -254,16 +223,35 @@ module.exports = function (eleventyConfig) {
     return value;
   });
 
+  // slugify input string
+  eleventyConfig.addFilter("slugify", function (value) {
+    return value
+      .toString()
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, "-") // Replace spaces with -
+      .replace(/&/g, "-and-") // Replace & with 'and'
+      .replace(/[^\w\-]+/g, "") // Remove all non-word chars
+      .replace(/\-\-+/g, "-"); // Replace multiple - with single -
+  });
+
+  // Add the checkAuthorPage filter
+  eleventyConfig.addFilter("checkAuthorPage", function (value) {
+    const slug = eleventyConfig.getFilter("slugify")(value);
+    const filePath = path.join("src", "authors", `${slug}.md`);
+
+    if (fs.existsSync(filePath)) {
+      return `<a href="/authors/${slug}">${value}</a>`;
+    }
+
+    return `${value}`;
+  });
+
   // FILTERS
   // convert date to [Month DD, YYYY], set timezone to UTC to ensure date is not off by one
   // https://moment.github.io/luxon/docs/class/src/datetime.js~DateTime.html
   // https://www.11ty.dev/docs/dates/#dates-off-by-one-day
   eleventyConfig.addFilter("postDate", (dateObj) => {
-    // return DateTime.fromJSDate(dateObj, { zone: "utc" }).toLocaleString(
-    //     DateTime.DATE_FULL
-    // );
-    // return DateTime.fromJSDate(dateObj).toLocaleString();
-    // return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
@@ -338,6 +326,7 @@ module.exports = function (eleventyConfig) {
     return Array.from(collectionSet).sort();
   });
 
+  // filter tags
   eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
     return (tags || [])
       .filter(
@@ -355,6 +344,11 @@ module.exports = function (eleventyConfig) {
           ].indexOf(tag) === -1
       )
       .sort();
+  });
+
+  // exclude current item
+  eleventyConfig.addFilter("excludeCurrentItem", function (collection) {
+    return collection.filter((item) => item.inputPath !== this.page.inputPath);
   });
 
   // TRANSFORMS
@@ -404,13 +398,12 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    // set the input and output directories
     dir: {
       input: "src",
-      output: "_site",
       data: "_data",
-      includes: "_includes",
       layouts: "_layouts",
+      includes: "_includes",
+      output: "_site",
     },
     templateFormats: ["njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
