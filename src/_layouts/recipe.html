@@ -7,9 +7,9 @@ layout: base.html
 <article>
   {{ hero(title) }}
   <div class="pw-gradient">
-    <div class="max-w-5xl mx-auto">
-      <div class="md:grid grid-cols-4 gap-8">
-        <div class="bg-white border-2 border-gray-100 col-span-3 p-8 shadow-lg">
+    <div class="mx-auto max-w-5xl">
+      <div class="grid-cols-4 gap-8 md:grid">
+        <div class="col-span-3 border-2 border-gray-100 bg-white p-8 shadow-lg">
           <div class="prose max-w-none">{{ content | safe }}</div>
 
           <div class="mt-12 md:mt-24">
@@ -17,10 +17,10 @@ layout: base.html
               href="https://github.com/processwire-recipes/Recipes/blob/master/{{ page.fileSlug }}.md"
               rel="nofollow noreferrer noopener"
               target="_blank"
-              class="flex space-x-4 font-medium justify-center items-center bg-gray-700 text-white p-4 rounded hover:bg-gray-800"
+              class="flex items-center justify-center space-x-4 rounded bg-gray-700 p-4 font-medium text-white hover:bg-gray-800"
             >
               <div>
-                <svg viewBox="0 0 128 128" class="w-6 h-6">
+                <svg viewBox="0 0 128 128" class="h-6 w-6">
                   <g fill="currentColor">
                     <path
                       fill-rule="evenodd"
@@ -42,14 +42,17 @@ layout: base.html
         </div>
 
         <div class="col-start-4 col-end-5 row-start-1 p-6 md:p-0">
-          <div class="mt-24 text-white space-y-6">
+          <div class="mt-24 space-y-6 text-white">
+            <div class="fav">
+              <span @click="$store.fr.addItem( 'title', 'url')"> Add Fav </span>
+            </div>
             <!-- Version -->
             {% if version %}
             <div>
               <span class="block text-xs font-medium uppercase tracking-widest"
                 >Version:</span
               >
-              <span class="text-sm tracking-widest font-semibold tabular-nums"
+              <span class="text-sm font-semibold tabular-nums tracking-widest"
                 >{{ version }}</span
               >
             </div>
@@ -61,7 +64,7 @@ layout: base.html
               <span class="block text-xs font-medium uppercase tracking-widest"
                 >Updated:</span
               >
-              <span class="text-sm tracking-widest font-semibold tabular-nums"
+              <span class="text-sm font-semibold tabular-nums tracking-widest"
                 >{{ date | postDate }}</span
               >
             </div>
@@ -69,7 +72,7 @@ layout: base.html
               <span class="block text-xs font-medium uppercase tracking-widest"
                 >Added:</span
               >
-              <span class="text-sm tracking-widest font-semibold tabular-nums"
+              <span class="text-sm font-semibold tabular-nums tracking-widest"
                 >{{ added | postDate }}</span
               >
             </div>
@@ -78,7 +81,7 @@ layout: base.html
               <span class="block text-xs font-medium uppercase tracking-widest"
                 >Added:</span
               >
-              <span class="text-sm tracking-widest font-semibold tabular-nums"
+              <span class="text-sm font-semibold tabular-nums tracking-widest"
                 >{{ date | postDate }}</span
               >
             </div>
@@ -90,7 +93,7 @@ layout: base.html
               <span class="block text-xs font-medium uppercase tracking-widest"
                 >ProcessWire:</span
               >
-              <span class="text-sm tracking-widest font-semibold tabular-nums"
+              <span class="text-sm font-semibold tabular-nums tracking-widest"
                 >{{ processwire }}</span
               >
             </div>
@@ -103,7 +106,7 @@ layout: base.html
                 >Dependencies:</span
               >
               {% for dependency in dependencies %}
-              <span class="text-sm tracking-widest font-semibold tabular-nums"
+              <span class="text-sm font-semibold tabular-nums tracking-widest"
                 >{{ dependency }}</span
               >
               {% endfor %}
@@ -117,7 +120,7 @@ layout: base.html
                 >Authors:</span
               >
               {% for author in authors %}
-              <span class="uppercase text-sm tracking-widest font-semibold"
+              <span class="text-sm font-semibold uppercase tracking-widest"
                 >{{ author }}</span
               >{% if not loop.last %}, {% endif %}{% endfor %}
             </div>
@@ -127,7 +130,7 @@ layout: base.html
             {% if tags.length > 1 %}
             <div>
               <span
-                class="block text-xs font-medium uppercase tracking-widest mb-2"
+                class="mb-2 block text-xs font-medium uppercase tracking-widest"
                 >Tags:</span
               >
               <div>
