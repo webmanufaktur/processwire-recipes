@@ -5,6 +5,10 @@ excerpt: "All recent updates on this website summarized from new to old. In case
 toc: true
 ---
 
+## 🗓️ 2023-04-24
+
+- Moved to Netlify
+
 ## 🗓️ 2023-04-08
 
 ### ⚒️ Features
