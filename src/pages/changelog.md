@@ -5,6 +5,10 @@ excerpt: "All recent updates on this website summarized from new to old. In case
 toc: true
 ---
 
+## 🗓️ 2023-05-14
+
+- **Added recipes**:<br>[Automatically check for module updates (get notified by mail)](/recipes/automate-module-upgrade-check/)
+
 ## 🗓️ 2023-04-08
 
 ### ⚒️ Features
