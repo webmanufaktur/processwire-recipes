@@ -14,6 +14,20 @@ toc: true
 
 ## 🗒️ ToDo
 
+- ☐ **Merge Recipes/Site** -- make it a complete repo, just in case
+- ☐ **RSS Feeds** -- Add RSS Feeds for several parts of the site
+  - ☐ Recipes
+  - ☐ Blog
+  - ☐ Changelog
+  - ☐ Roadmap
+  - ☐ Community Projects
+- ☐ **Favourites** -- Add Bookmarks/Favourites for
+  - ☐ Fav: Recipes
+  - ☐ Fav: Posts
+  - ☐ Fav: ...
+- ☐ **Newsletter** -- Could be a good idea
+- ☐ **Guides**
+- ☐ **Tutorials/HOWTOs**
 - ☐ **Topics/Tags** -- Overview of all topics/tags
 - ☐ **Credits** -- List of all contributors and authors
 - ☐ **wbmnfktr snippets** -- Merge [wbmnfktr/snippets](https://github.com/webmanufaktur/processwire-snippets)
