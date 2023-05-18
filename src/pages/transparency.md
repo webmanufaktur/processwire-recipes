@@ -9,12 +9,13 @@ seorobots: index, follow
 
 ## 💵 Spent
 
-| Spent on                     | Price (in US$) | Notes               |
-| ---------------------------- | -------------: | ------------------- |
-| Domain (1. year, 2023-03-10) |           6.30 | Domain Deal         |
-| Hosting                      |           0.00 | Cloudflare Pages    |
-| Theme                        |           0.00 | InHouse             |
-| **Total**                    |       **6.30** | Quite a cheap start |
+| Spent on                        | Price (in US$) | Notes                               |
+| ------------------------------- | -------------: | ----------------------------------- |
+| Domain<br>(1. year, 2023-03-10) |           6.30 | Domain Deal                         |
+| ~~Hosting~~                     |           0.00 | ~~Cloudflare Pages<br>(until May)~~ |
+| Hosting                         |           0.00 | Netlify<br>(since May)              |
+| Theme                           |           0.00 | InHouse                             |
+| **Total**                       |       **6.30** | Quite a cheap start                 |
 
 ## 💵 Earned
 

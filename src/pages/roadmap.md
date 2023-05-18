@@ -14,7 +14,7 @@ toc: true
 
 ## 🗒️ ToDo
 
-- ☐ **Merge Recipes/Site** -- make it a complete repo, just in case
+- ☐ **Merge Recipes/Site** -- make it a monorepo, just in case
 - ☐ **RSS Feeds** -- Add RSS Feeds for several parts of the site
   - ☐ Recipes
   - ☐ Blog

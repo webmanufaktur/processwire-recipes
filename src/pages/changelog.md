@@ -5,6 +5,11 @@ excerpt: "All recent updates on this website summarized from new to old. In case
 toc: true
 ---
 
+## 🗓️ 2023-05-18
+
+- **New Host**:<br>Moved to a new host: [Netlify](https://netlify.com/)
+- **Added recipes**:<br>[Load Remote Assets On-Demand from another ProcessWire Instance](/recipes/load-images-assets/)
+
 ## 🗓️ 2023-05-14
 
 - **Added recipes**:<br>[Automatically check for module updates (get notified by mail)](/recipes/automate-module-upgrade-check/)

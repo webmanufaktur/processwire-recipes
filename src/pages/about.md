@@ -28,7 +28,8 @@ See more updates and changes in our [changelog](/changelog/).
 
 - This site went online on **2023-02-25**
 - This site uses [11ty](https://11ty.dev/) to render `.md` files into `.html`
-- This site is hosted on [Cloudflare Pages](https://pages.cloudflare.com/)
+- This site is hosted on [Netlify](https://www.netlify.com/)
+- ~~This site is hosted on **Cloudflare Pages**~~
 
 ### Issues? Problems? Questions?
 
