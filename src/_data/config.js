@@ -27,5 +27,6 @@ module.exports = function () {
   };
 };
 
-console.log("XXXXXXXXXXXXXXXXXXXXXX" + process.env.BUILD_DRAFTS);
-console.log("XXXXXXXXXXXXXXXXXXXXXX" + process.env.FRITZ);
+console.log("DEBUG DETAILS DRAFTS: " + process.env.BUILD_DRAFTS);
+console.log("DEBUG DETAILS DOMAIN: " + process.env.DOMAIN);
+console.log("DEBUG DETAILS URL: " + process.env.URL);
