@@ -1,0 +1,21 @@
+---
+title: Debug
+permalink: /misc/
+eleventyExcludeFromCollections: true
+---
+
+config.environment: {{ process.env.PROD_STATE }}
+
+<hr>
+11ty: {{  process.env.PROD_STATE }}
+<hr />
+prod: {{ config.prodUrl }}
+<hr />
+dev: {{ config.devUrl }}
+<hr />
+base: {{ config.baseUrl }}
+<hr />
+isProd: {{ config.isProd }}
+<hr />
+
+
