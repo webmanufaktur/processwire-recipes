@@ -1,6 +1,7 @@
 ---
 title: Imprint
 seorobots: "noindex, follow"
+eleventyExcludeFromCollections: true
 ---
 
 ## Information pursuant to Sect. 5 German Telemedia Act (TMG)

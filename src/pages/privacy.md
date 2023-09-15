@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy / GDPR
 seorobots: "noindex, follow"
+eleventyExcludeFromCollections: true
 ---
 
 ## 1\. An overview of data protection
