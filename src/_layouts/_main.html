@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -94,6 +94,18 @@
     ></script>
   </head>
   <body x-data class="text-gray-900">
+    <div class="preview h-0 overflow-hidden">
+      ProcessWire Recipes - A collection of ProcessWire API snippets to solve
+      common tasks, provide full solutions, and some little helpers that make
+      work with the API easier.
+    </div>
+    <div
+      class="alert bg-red-100 text-sm text-center border-2 rounded border-red-500 py-2 px-8 text-red-900 my-4 md:mx-24 mx-4"
+    >
+      <span class="font-medium uppercase tracking-widest">
+        site is undergoing several changes - some links might be broken</span
+      >
+    </div>
     {{ content | safe }}
   </body>
 </html>
