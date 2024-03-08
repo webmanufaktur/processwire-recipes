@@ -52,7 +52,7 @@ markdown.use(mila, [
     },
     attrs: {
       target: "_blank",
-      rel: "nofollow noopener noreferrer",
+      rel: "noopener",
     },
   },
   {
@@ -341,7 +341,7 @@ module.exports = function (eleventyConfig) {
             "links",
             "pillows",
             "recipes",
-          ].indexOf(tag) === -1
+          ].indexOf(tag) === -1,
       )
       .sort();
   });
@@ -387,7 +387,7 @@ module.exports = function (eleventyConfig) {
 
         return data.eleventyExcludeFromCollections;
       };
-    }
+    },
   );
 
   eleventyConfig.on("eleventy.before", ({ runMode }) => {
