@@ -14,6 +14,7 @@ toc: true
 
 ## 🗒️ ToDo
 
+- ☐ **Rebuild in Astro** -- as it says
 - ☐ **Merge Recipes/Site** -- make it a monorepo, just in case
 - ☐ **RSS Feeds** -- Add RSS Feeds for several parts of the site
   - ☐ Recipes

@@ -5,6 +5,12 @@ excerpt: "All recent updates on this website summarized from new to old. In case
 toc: true
 ---
 
+## 🗓️ 2024-05-13
+
+- Almost a year later 😭
+- Get this up and running again
+- First preparations for rebuilding with [Astro JS](https://astro.build/)
+
 ## 🗓️ 2023-05-18
 
 - **New Host**:<br>Moved to a new host: [Netlify](https://netlify.com/)
